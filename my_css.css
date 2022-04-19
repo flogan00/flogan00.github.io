@@ -17,24 +17,11 @@ h4 {
   font-weight: 400;
   margin-bottom: 30px;
 }
-.jumboimage {
-  .hero-image {
-  background-image: url("niceheader.jpg");
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  }
-  }
-  
-.jumbotron {
-  top: 50%;
-  left: 50%;
-  color: white;
-  padding: 50px 25px;
-  font-family: Georgia, sans-serif;
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Georgia, sans-serif;
 }
 .container-fluid {
   padding: 60px 50px;
