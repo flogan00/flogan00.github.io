@@ -29,6 +29,12 @@ h4 {
   }
   
 .jumbotron {
+  .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
   padding: 50px 25px;
   font-family: Georgia, sans-serif;
 }
