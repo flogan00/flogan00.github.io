@@ -18,7 +18,7 @@ h4 {
   margin-bottom: 30px;
 }  
 .jumbotron {
-  color: #fff;
+  color: transparent;
   padding: 50px 25px;
   font-family: Georgia, sans-serif;
 }
@@ -115,8 +115,8 @@ h4 {
   color: #fff !important;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #5ba8cf !important;
-  background-color: #fff !important;
+  color: transparent !important;
+  background-color: transparent !important;
 }
 .navbar-default .navbar-toggle {
   border-color: transparent;
