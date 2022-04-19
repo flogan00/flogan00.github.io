@@ -16,10 +16,19 @@ h4 {
   color: #303030;
   font-weight: 400;
   margin-bottom: 30px;
-}  
-.jumbotron {
+}
+.jumboimage {
+  .hero-image {
   background-image: url("niceheader.jpg");
   background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  
+.jumbotron {
   padding: 50px 25px;
   font-family: Georgia, sans-serif;
 }
