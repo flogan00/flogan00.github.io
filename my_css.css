@@ -18,7 +18,7 @@ h4 {
   margin-bottom: 30px;
 }  
 .jumbotron {
-  color: #f6f6f6;
+  background-image: url('niceheader.jpg');
   padding: 50px 25px;
   font-family: Georgia, sans-serif;
 }
