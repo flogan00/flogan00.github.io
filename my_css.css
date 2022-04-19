@@ -19,6 +19,7 @@ h4 {
 }  
 .jumbotron {
   background-image: url('niceheader.jpg');
+  background-color: #cccccc;
   padding: 50px 25px;
   font-family: Georgia, sans-serif;
 }
