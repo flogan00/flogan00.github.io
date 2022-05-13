@@ -1,0 +1,5801 @@
+greatveg_totals ({
+  "type": "FeatureCollection",
+  "features": [
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2006,
+   "vegTotal":"350.73",
+   "cottonwoodSum":"89",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"0"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2012,
+   "vegTotal":"204.19",
+   "cottonwoodSum":"142.47",
+   "rusOliveSum":"0.47",
+   "nmOliveSum":"7.54",
+   "saltcedarSum":"NULL",
+   "precip":"4.916666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.3896,35.50989 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Forest",
+   "siteNo":24,
+   "year":2012,
+   "vegTotal":"119.22",
+   "cottonwoodSum":"153.7",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"7.17",
+   "saltcedarSum":"NULL",
+   "precip":"5.1625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2011,
+   "vegTotal":"188.97",
+   "cottonwoodSum":"156.98",
+   "rusOliveSum":"7.6",
+   "nmOliveSum":"1.21",
+   "saltcedarSum":"2.07",
+   "precip":"5.254166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2012,
+   "vegTotal":"244.26",
+   "cottonwoodSum":"174.26",
+   "rusOliveSum":"43.93",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"5.91",
+   "precip":"5.825"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2011,
+   "vegTotal":"285.42",
+   "cottonwoodSum":"73.97",
+   "rusOliveSum":"6.06",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"5.83"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2012,
+   "vegTotal":"106.61",
+   "cottonwoodSum":"149.29",
+   "rusOliveSum":"0.3",
+   "nmOliveSum":"0.43",
+   "saltcedarSum":"17.7",
+   "precip":"5.970833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2012,
+   "vegTotal":"183.74",
+   "cottonwoodSum":"24.46",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"18.72",
+   "saltcedarSum":"0.06",
+   "precip":"5.975"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2012,
+   "vegTotal":"289.82",
+   "cottonwoodSum":"80.5",
+   "rusOliveSum":"6.05",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"6.286363636"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2012,
+   "vegTotal":"441.01",
+   "cottonwoodSum":"12.4",
+   "rusOliveSum":"109.57",
+   "nmOliveSum":"0.03",
+   "saltcedarSum":"101.09",
+   "precip":"6.304166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2011,
+   "vegTotal":"268.65",
+   "cottonwoodSum":"192.75",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"6.766666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2012,
+   "vegTotal":"389.68",
+   "cottonwoodSum":"147.73",
+   "rusOliveSum":"3.07",
+   "nmOliveSum":"179.05",
+   "saltcedarSum":"1.57",
+   "precip":"6.845833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2012,
+   "vegTotal":"198.17",
+   "cottonwoodSum":"159.03",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"6.958333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2012,
+   "vegTotal":"288.33",
+   "cottonwoodSum":"183.61",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"7.0625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2011,
+   "vegTotal":"97.327",
+   "cottonwoodSum":"147.43",
+   "rusOliveSum":"3.03",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"10.81",
+   "precip":"7.258333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7202778,35.066889 ]
+   },
+   "properties": {
+   "siteName":"Los Lunas",
+   "siteNo":23,
+   "year":2012,
+   "vegTotal":"255.85",
+   "cottonwoodSum":"52.21",
+   "rusOliveSum":"0.17",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"7.3125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2002,
+   "vegTotal":"215.17",
+   "cottonwoodSum":"163.27",
+   "rusOliveSum":"6.84",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"7.563636364"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2012,
+   "vegTotal":"241.68",
+   "cottonwoodSum":"186.31",
+   "rusOliveSum":"69.88",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"26.09",
+   "precip":"7.775"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2012,
+   "vegTotal":"250.41",
+   "cottonwoodSum":"27.12",
+   "rusOliveSum":"43.01",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.22",
+   "precip":"7.925"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2014,
+   "vegTotal":"366.42",
+   "cottonwoodSum":"157.35",
+   "rusOliveSum":"3.5",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"8.108333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2012,
+   "vegTotal":"408.26",
+   "cottonwoodSum":"36.16",
+   "rusOliveSum":"6.23",
+   "nmOliveSum":"5.66",
+   "saltcedarSum":"NULL",
+   "precip":"8.154166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2003,
+   "vegTotal":"57.22",
+   "cottonwoodSum":"25.05",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.08",
+   "saltcedarSum":"18.22",
+   "precip":"8.165"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2014,
+   "vegTotal":"412.37",
+   "cottonwoodSum":"34.93",
+   "rusOliveSum":"83.93",
+   "nmOliveSum":"0.2",
+   "saltcedarSum":"137.15",
+   "precip":"8.245"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2011,
+   "vegTotal":"218.65",
+   "cottonwoodSum":"39.52",
+   "rusOliveSum":"2.15",
+   "nmOliveSum":"14.7",
+   "saltcedarSum":"0.56",
+   "precip":"8.304166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2012,
+   "vegTotal":"235.24",
+   "cottonwoodSum":"14.46",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"2.52",
+   "saltcedarSum":"NULL",
+   "precip":"8.4125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2001,
+   "vegTotal":"320.11",
+   "cottonwoodSum":"209.16",
+   "rusOliveSum":"16.65",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.07",
+   "precip":"8.5"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2011,
+   "vegTotal":"231.67",
+   "cottonwoodSum":"168.23",
+   "rusOliveSum":"41.27",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"4.9",
+   "precip":"8.625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2011,
+   "vegTotal":"443.18",
+   "cottonwoodSum":"12.82",
+   "rusOliveSum":"120.33",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"84.01",
+   "precip":"8.691666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2014,
+   "vegTotal":"204.02",
+   "cottonwoodSum":"47.8",
+   "rusOliveSum":"2.79",
+   "nmOliveSum":"7.92",
+   "saltcedarSum":"0.22",
+   "precip":"8.695833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2001,
+   "vegTotal":"413.9",
+   "cottonwoodSum":"196.69",
+   "rusOliveSum":"5.07",
+   "nmOliveSum":"166.04",
+   "saltcedarSum":"1.29",
+   "precip":"8.804545455"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2014,
+   "vegTotal":"164.06",
+   "cottonwoodSum":"142.57",
+   "rusOliveSum":"4.23",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"10.74",
+   "precip":"8.854166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2012,
+   "vegTotal":"67.83",
+   "cottonwoodSum":"1.02",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"2.3",
+   "saltcedarSum":"26.55",
+   "precip":"8.883333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2001,
+   "vegTotal":"638.97",
+   "cottonwoodSum":"162.77",
+   "rusOliveSum":"12.53",
+   "nmOliveSum":"21.04",
+   "saltcedarSum":"NULL",
+   "precip":"8.966666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2011,
+   "vegTotal":"128.45",
+   "cottonwoodSum":"50.2",
+   "rusOliveSum":"2.16",
+   "nmOliveSum":"2.53",
+   "saltcedarSum":"5.71",
+   "precip":"9.004166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2003,
+   "vegTotal":"303.84",
+   "cottonwoodSum":"170.89",
+   "rusOliveSum":"14.31",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"9.041666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2011,
+   "vegTotal":"174.19",
+   "cottonwoodSum":"186.35",
+   "rusOliveSum":"54.74",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"24.7",
+   "precip":"9.145833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2011,
+   "vegTotal":"394.76",
+   "cottonwoodSum":"144.12",
+   "rusOliveSum":"2.82",
+   "nmOliveSum":"168",
+   "saltcedarSum":"1.91",
+   "precip":"9.191666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2009,
+   "vegTotal":"275.04",
+   "cottonwoodSum":"171.71",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"9.254166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2014,
+   "vegTotal":"307.01",
+   "cottonwoodSum":"143.91",
+   "rusOliveSum":"7.43",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"0.04",
+   "precip":"9.279166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2011,
+   "vegTotal":"330.034",
+   "cottonwoodSum":"20.27",
+   "rusOliveSum":"26.97",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.78",
+   "precip":"9.304166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2012,
+   "vegTotal":"471.16",
+   "cottonwoodSum":"227.43",
+   "rusOliveSum":"36.32",
+   "nmOliveSum":"1.71",
+   "saltcedarSum":"NULL",
+   "precip":"9.3375"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2002,
+   "vegTotal":"399.99",
+   "cottonwoodSum":"214.54",
+   "rusOliveSum":"5.68",
+   "nmOliveSum":"142.48",
+   "saltcedarSum":"0.05",
+   "precip":"9.418181818"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2003,
+   "vegTotal":"502.18",
+   "cottonwoodSum":"122.32",
+   "rusOliveSum":"19.21",
+   "nmOliveSum":"2.9",
+   "saltcedarSum":"NULL",
+   "precip":"9.55"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2003,
+   "vegTotal":"400.36",
+   "cottonwoodSum":"197.49",
+   "rusOliveSum":"5.7",
+   "nmOliveSum":"154.31",
+   "saltcedarSum":"0.72",
+   "precip":"9.575"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2009,
+   "vegTotal":"224.96",
+   "cottonwoodSum":"153.64",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"9.583333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2003,
+   "vegTotal":"127.64",
+   "cottonwoodSum":"35.07",
+   "rusOliveSum":"30.62",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"8.04",
+   "precip":"9.605555556"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2003,
+   "vegTotal":"186.12",
+   "cottonwoodSum":"62.93",
+   "rusOliveSum":"20.58",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"18.04",
+   "precip":"9.672727273"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2003,
+   "vegTotal":"250.35",
+   "cottonwoodSum":"188.7",
+   "rusOliveSum":"11.86",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"1.16",
+   "precip":"9.8"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2012,
+   "vegTotal":"283.79",
+   "cottonwoodSum":"170.5",
+   "rusOliveSum":"36.62",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"9.833333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2006,
+   "vegTotal":"292.14",
+   "cottonwoodSum":"45.4",
+   "rusOliveSum":"36.29",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"6.53",
+   "precip":"9.927272727"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2009,
+   "vegTotal":"191.99",
+   "cottonwoodSum":"163.79",
+   "rusOliveSum":"2.1",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"5.81",
+   "precip":"10.00833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7202778,35.066889 ]
+   },
+   "properties": {
+   "siteName":"Los Lunas",
+   "siteNo":23,
+   "year":2011,
+   "vegTotal":"221.18",
+   "cottonwoodSum":"22.38",
+   "rusOliveSum":"2.18",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"0.11",
+   "precip":"10.23333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2014,
+   "vegTotal":"381.72",
+   "cottonwoodSum":"153.25",
+   "rusOliveSum":"3.7",
+   "nmOliveSum":"153.76",
+   "saltcedarSum":"1.37",
+   "precip":"10.24166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2012,
+   "vegTotal":"221.46",
+   "cottonwoodSum":"50.06",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.68",
+   "saltcedarSum":"NULL",
+   "precip":"10.28333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2014,
+   "vegTotal":"191.47",
+   "cottonwoodSum":"137.56",
+   "rusOliveSum":"0.07",
+   "nmOliveSum":"11.28",
+   "saltcedarSum":"0.05",
+   "precip":"10.3875"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2009,
+   "vegTotal":"493.11",
+   "cottonwoodSum":"145.56",
+   "rusOliveSum":"85.32",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"10.48636364"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2014,
+   "vegTotal":"317.76",
+   "cottonwoodSum":"18.5",
+   "rusOliveSum":"76.45",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"20.43",
+   "precip":"10.66666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2008,
+   "vegTotal":"239.21",
+   "cottonwoodSum":"147.65",
+   "rusOliveSum":"1.14",
+   "nmOliveSum":"6.17",
+   "saltcedarSum":"0.85",
+   "precip":"10.69545455"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2011,
+   "vegTotal":"180.62",
+   "cottonwoodSum":"175.24",
+   "rusOliveSum":"31.16",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"10.80416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2008,
+   "vegTotal":"261.77",
+   "cottonwoodSum":"95.3",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"10.82083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2009,
+   "vegTotal":"94.52",
+   "cottonwoodSum":"21.31",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.54",
+   "saltcedarSum":"26.39",
+   "precip":"10.825"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2001,
+   "vegTotal":"108.75",
+   "cottonwoodSum":"29.47",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"24.74",
+   "precip":"10.835"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2009,
+   "vegTotal":"367.58",
+   "cottonwoodSum":"118.13",
+   "rusOliveSum":"133.89",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"68.96",
+   "precip":"10.89090909"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2011,
+   "vegTotal":"403.4",
+   "cottonwoodSum":"111.31",
+   "rusOliveSum":"61.28",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"141.56",
+   "precip":"11.05416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2014,
+   "vegTotal":"213.47",
+   "cottonwoodSum":"140.78",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"11.12916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2008,
+   "vegTotal":"335.33",
+   "cottonwoodSum":"168.49",
+   "rusOliveSum":"4.43",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"11.30416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2014,
+   "vegTotal":"283.59",
+   "cottonwoodSum":"151.51",
+   "rusOliveSum":"50.86",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"3.07",
+   "precip":"11.34166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2011,
+   "vegTotal":"186.52",
+   "cottonwoodSum":"174.48",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.013",
+   "saltcedarSum":"NULL",
+   "precip":"11.34583333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2009,
+   "vegTotal":"290.99",
+   "cottonwoodSum":"99.47",
+   "rusOliveSum":"15.43",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"11.35833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2008,
+   "vegTotal":"237.62",
+   "cottonwoodSum":"53.13",
+   "rusOliveSum":"25.58",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.38",
+   "precip":"11.42916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2001,
+   "vegTotal":"631.01",
+   "cottonwoodSum":"92.27",
+   "rusOliveSum":"83.7",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"11.45909091"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2009,
+   "vegTotal":"269.97",
+   "cottonwoodSum":"159.21",
+   "rusOliveSum":"4.05",
+   "nmOliveSum":"6.35",
+   "saltcedarSum":"3.03",
+   "precip":"11.47916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2002,
+   "vegTotal":"531.91",
+   "cottonwoodSum":"103.54",
+   "rusOliveSum":"94.15",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"11.55833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2009,
+   "vegTotal":"338.29",
+   "cottonwoodSum":"22.74",
+   "rusOliveSum":"10.9",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"4",
+   "precip":"11.6625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2000,
+   "vegTotal":"93.87",
+   "cottonwoodSum":"31.08",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"21.84",
+   "precip":"11.75"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2010,
+   "vegTotal":"534.96",
+   "cottonwoodSum":"11.87",
+   "rusOliveSum":"151.37",
+   "nmOliveSum":"0.01",
+   "saltcedarSum":"88.66",
+   "precip":"11.79545455"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2008,
+   "vegTotal":"202.33",
+   "cottonwoodSum":"143.89",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"11.05",
+   "saltcedarSum":"0.23",
+   "precip":"11.84166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2014,
+   "vegTotal":"283.84",
+   "cottonwoodSum":"128.85",
+   "rusOliveSum":"41.11",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"11.87727273"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2002,
+   "vegTotal":"269.04",
+   "cottonwoodSum":"267.23",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.22",
+   "saltcedarSum":"NULL",
+   "precip":"11.89444444"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2011,
+   "vegTotal":"332.79",
+   "cottonwoodSum":"33.32",
+   "rusOliveSum":"3.48",
+   "nmOliveSum":"2.21",
+   "saltcedarSum":"NULL",
+   "precip":"11.94166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2013,
+   "vegTotal":"172.17",
+   "cottonwoodSum":"167.01",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.91",
+   "saltcedarSum":"1.25",
+   "precip":"11.94166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2001,
+   "vegTotal":"219",
+   "cottonwoodSum":"54.14",
+   "rusOliveSum":"27.77",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"9.8",
+   "precip":"11.95"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2011,
+   "vegTotal":"349.04",
+   "cottonwoodSum":"38.89",
+   "rusOliveSum":"67.31",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"11.95833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2009,
+   "vegTotal":"204.22",
+   "cottonwoodSum":"138.54",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"22.09",
+   "saltcedarSum":"0.54",
+   "precip":"11.9625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.3896,35.50989 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Forest",
+   "siteNo":24,
+   "year":2014,
+   "vegTotal":"251.13",
+   "cottonwoodSum":"64.09",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"7.75",
+   "saltcedarSum":"NULL",
+   "precip":"12.06666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7202778,35.066889 ]
+   },
+   "properties": {
+   "siteName":"Los Lunas",
+   "siteNo":23,
+   "year":2008,
+   "vegTotal":"295.42",
+   "cottonwoodSum":"204.74",
+   "rusOliveSum":"1.07",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"0.99",
+   "precip":"12.1"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2011,
+   "vegTotal":"253.15",
+   "cottonwoodSum":"25.03",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.68",
+   "saltcedarSum":"NULL",
+   "precip":"12.10416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2011,
+   "vegTotal":"234.08",
+   "cottonwoodSum":"55.54",
+   "rusOliveSum":"13.22",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.61",
+   "precip":"12.15"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2008,
+   "vegTotal":"346.13",
+   "cottonwoodSum":"164.25",
+   "rusOliveSum":"1.34",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"12.1625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2009,
+   "vegTotal":"429.01",
+   "cottonwoodSum":"60.94",
+   "rusOliveSum":"79.19",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"147.81",
+   "precip":"12.25"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2008,
+   "vegTotal":"223.04",
+   "cottonwoodSum":"37.53",
+   "rusOliveSum":"37.03",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"11.04",
+   "precip":"12.2625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2008,
+   "vegTotal":"558.55",
+   "cottonwoodSum":"122.59",
+   "rusOliveSum":"25.02",
+   "nmOliveSum":"19.75",
+   "saltcedarSum":"NULL",
+   "precip":"12.3125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7434661,34.637511 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Cleared",
+   "siteNo":25,
+   "year":2012,
+   "vegTotal":"279.1",
+   "cottonwoodSum":"170.52",
+   "rusOliveSum":"2.81",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"19.78",
+   "precip":"12.33333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7202778,35.066889 ]
+   },
+   "properties": {
+   "siteName":"Los Lunas",
+   "siteNo":23,
+   "year":2014,
+   "vegTotal":"246.74",
+   "cottonwoodSum":"75.9",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"12.38333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2003,
+   "vegTotal":"485.64",
+   "cottonwoodSum":"119.48",
+   "rusOliveSum":"97.17",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"12.475"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2010,
+   "vegTotal":"196.16",
+   "cottonwoodSum":"59.39",
+   "rusOliveSum":"1.7",
+   "nmOliveSum":"1.53",
+   "saltcedarSum":"5.84",
+   "precip":"12.49583333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2013,
+   "vegTotal":"186.1",
+   "cottonwoodSum":"22.63",
+   "rusOliveSum":"70.12",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"25.13",
+   "precip":"12.53333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2014,
+   "vegTotal":"160.49",
+   "cottonwoodSum":"156.63",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"4.32",
+   "saltcedarSum":"2.03",
+   "precip":"12.6375"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2012,
+   "vegTotal":"310.35",
+   "cottonwoodSum":"54.08",
+   "rusOliveSum":"5.13",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"12.73636364"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7202778,35.066889 ]
+   },
+   "properties": {
+   "siteName":"Los Lunas",
+   "siteNo":23,
+   "year":2009,
+   "vegTotal":"248.25",
+   "cottonwoodSum":"56.01",
+   "rusOliveSum":"9.28",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"0.79",
+   "precip":"12.79166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2007,
+   "vegTotal":"254.99",
+   "cottonwoodSum":"237.43",
+   "rusOliveSum":"1.58",
+   "nmOliveSum":"0.66",
+   "saltcedarSum":"NULL",
+   "precip":"12.8"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2008,
+   "vegTotal":"169.78",
+   "cottonwoodSum":"50.52",
+   "rusOliveSum":"8.61",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"9.69",
+   "precip":"12.80833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2011,
+   "vegTotal":"128.47",
+   "cottonwoodSum":"4.74",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.95",
+   "saltcedarSum":"19.27",
+   "precip":"12.87272727"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2008,
+   "vegTotal":"194.9",
+   "cottonwoodSum":"142.39",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"12.875"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2002,
+   "vegTotal":"141.16",
+   "cottonwoodSum":"54.92",
+   "rusOliveSum":"16.27",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"9.36",
+   "precip":"12.88636364"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2005,
+   "vegTotal":"365.76",
+   "cottonwoodSum":"26.02",
+   "rusOliveSum":"40.8",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"7.08",
+   "precip":"12.89545455"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2008,
+   "vegTotal":"367.09",
+   "cottonwoodSum":"173.16",
+   "rusOliveSum":"2.81",
+   "nmOliveSum":"159.65",
+   "saltcedarSum":"0.41",
+   "precip":"12.94166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2012,
+   "vegTotal":"223.08",
+   "cottonwoodSum":"126.75",
+   "rusOliveSum":"18.94",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"9.29",
+   "precip":"13.02272727"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2013,
+   "vegTotal":"162.4",
+   "cottonwoodSum":"122.64",
+   "rusOliveSum":"37.76",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"13.08333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2009,
+   "vegTotal":"252.69",
+   "cottonwoodSum":"97.28",
+   "rusOliveSum":"31.09",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"4.38",
+   "precip":"13.1"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2008,
+   "vegTotal":"309.32",
+   "cottonwoodSum":"26.15",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.53",
+   "saltcedarSum":"27.16",
+   "precip":"13.10833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2009,
+   "vegTotal":"279.96",
+   "cottonwoodSum":"264.17",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.17",
+   "saltcedarSum":"NULL",
+   "precip":"13.19285714"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2010,
+   "vegTotal":"272.19",
+   "cottonwoodSum":"185.33",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"13.30833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2010,
+   "vegTotal":"257.03",
+   "cottonwoodSum":"158.69",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"6.93",
+   "saltcedarSum":"3.14",
+   "precip":"13.325"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2013,
+   "vegTotal":"186.68",
+   "cottonwoodSum":"170.52",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"139",
+   "saltcedarSum":"NULL",
+   "precip":"13.34166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2005,
+   "vegTotal":"501.56",
+   "cottonwoodSum":"96.85",
+   "rusOliveSum":"131.6",
+   "nmOliveSum":"0.48",
+   "saltcedarSum":"70.79",
+   "precip":"13.43333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2014,
+   "vegTotal":"221.64",
+   "cottonwoodSum":"60.78",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"5.88",
+   "saltcedarSum":"NULL",
+   "precip":"13.47083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2005,
+   "vegTotal":"397.99",
+   "cottonwoodSum":"193.36",
+   "rusOliveSum":"3.2",
+   "nmOliveSum":"162.55",
+   "saltcedarSum":"0.62",
+   "precip":"13.48636364"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2014,
+   "vegTotal":"207.4",
+   "cottonwoodSum":"170.69",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"2.24",
+   "saltcedarSum":"26.37",
+   "precip":"13.50833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2009,
+   "vegTotal":"346.4",
+   "cottonwoodSum":"32.61",
+   "rusOliveSum":"44.98",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"12.07",
+   "precip":"13.5125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2005,
+   "vegTotal":"406.35",
+   "cottonwoodSum":"172.95",
+   "rusOliveSum":"63.4",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"136.38",
+   "precip":"13.53181818"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2007,
+   "vegTotal":"471.72",
+   "cottonwoodSum":"124.1",
+   "rusOliveSum":"119.65",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"73.97",
+   "precip":"13.53333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2009,
+   "vegTotal":"341.1",
+   "cottonwoodSum":"187.43",
+   "rusOliveSum":"3.85",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"13.64583333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2008,
+   "vegTotal":"228.23",
+   "cottonwoodSum":"38.43",
+   "rusOliveSum":"14.73",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"13.77916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2007,
+   "vegTotal":"415.01",
+   "cottonwoodSum":"168.67",
+   "rusOliveSum":"64.58",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"145.76",
+   "precip":"13.83333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2010,
+   "vegTotal":"407.16",
+   "cottonwoodSum":"104.86",
+   "rusOliveSum":"66.04",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"142.43",
+   "precip":"13.85"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2007,
+   "vegTotal":"394.45",
+   "cottonwoodSum":"31.34",
+   "rusOliveSum":"45.56",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"8.15",
+   "precip":"13.87916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2011,
+   "vegTotal":"464.64",
+   "cottonwoodSum":"248.02",
+   "rusOliveSum":"37.37",
+   "nmOliveSum":"1.95",
+   "saltcedarSum":"NULL",
+   "precip":"13.91666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.3896,35.50989 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Forest",
+   "siteNo":24,
+   "year":2011,
+   "vegTotal":"112.09",
+   "cottonwoodSum":"182.29",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"4.13",
+   "saltcedarSum":"NULL",
+   "precip":"13.91666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2008,
+   "vegTotal":"510.81",
+   "cottonwoodSum":"122.65",
+   "rusOliveSum":"128.55",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"72.37",
+   "precip":"13.98333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2010,
+   "vegTotal":"438.6",
+   "cottonwoodSum":"38.72",
+   "rusOliveSum":"17.6",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"3.98",
+   "precip":"13.9875"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2005,
+   "vegTotal":"507.22",
+   "cottonwoodSum":"135.23",
+   "rusOliveSum":"91.95",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"14"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2009,
+   "vegTotal":"200.6",
+   "cottonwoodSum":"52.79",
+   "rusOliveSum":"11.03",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"14.31",
+   "precip":"14.02272727"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2007,
+   "vegTotal":"204.84",
+   "cottonwoodSum":"84.63",
+   "rusOliveSum":"1.28",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"0.45",
+   "precip":"14.04166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2005,
+   "vegTotal":"344.81",
+   "cottonwoodSum":"34",
+   "rusOliveSum":"51.61",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"26.5",
+   "precip":"14.15"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2009,
+   "vegTotal":"525.77",
+   "cottonwoodSum":"140.5",
+   "rusOliveSum":"30.06",
+   "nmOliveSum":"1.5",
+   "saltcedarSum":"NULL",
+   "precip":"14.20833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2010,
+   "vegTotal":"167.65",
+   "cottonwoodSum":"160.36",
+   "rusOliveSum":"1.15",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"16.39",
+   "precip":"14.2125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2008,
+   "vegTotal":"294.12",
+   "cottonwoodSum":"19.5",
+   "rusOliveSum":"7.45",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"3.92",
+   "precip":"14.22916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2010,
+   "vegTotal":"469.88",
+   "cottonwoodSum":"29.51",
+   "rusOliveSum":"38.51",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"4.08",
+   "precip":"14.27083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2001,
+   "vegTotal":"279.06",
+   "cottonwoodSum":"274.52",
+   "rusOliveSum":"1.69",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"0.48",
+   "precip":"14.275"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2014,
+   "vegTotal":"381.27",
+   "cottonwoodSum":"0.88",
+   "rusOliveSum":"8.08",
+   "nmOliveSum":"7.43",
+   "saltcedarSum":"NULL",
+   "precip":"14.275"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2007,
+   "vegTotal":"220.85",
+   "cottonwoodSum":"147.74",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"14.29583333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2002,
+   "vegTotal":"135.46",
+   "cottonwoodSum":"29.31",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"22.23",
+   "precip":"14.41666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2011,
+   "vegTotal":"160.75",
+   "cottonwoodSum":"110.33",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"14.42727273"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2000,
+   "vegTotal":"370.79",
+   "cottonwoodSum":"197.1",
+   "rusOliveSum":"3.25",
+   "nmOliveSum":"122.3",
+   "saltcedarSum":"NULL",
+   "precip":"14.46666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2006,
+   "vegTotal":"529.93",
+   "cottonwoodSum":"125.76",
+   "rusOliveSum":"23.52",
+   "nmOliveSum":"2.56",
+   "saltcedarSum":"NULL",
+   "precip":"14.47083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2012,
+   "vegTotal":"368.72",
+   "cottonwoodSum":"27.24",
+   "rusOliveSum":"82.4",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"14.47727273"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2010,
+   "vegTotal":"182.21",
+   "cottonwoodSum":"161.7",
+   "rusOliveSum":"25.56",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"14.50833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2000,
+   "vegTotal":"263.79",
+   "cottonwoodSum":"262.05",
+   "rusOliveSum":"0.81",
+   "nmOliveSum":"0.1",
+   "saltcedarSum":"0.13",
+   "precip":"14.655"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2009,
+   "vegTotal":"326.36",
+   "cottonwoodSum":"38.73",
+   "rusOliveSum":"7.97",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"3.12",
+   "precip":"14.75"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2002,
+   "vegTotal":"271.32",
+   "cottonwoodSum":"194.68",
+   "rusOliveSum":"12.59",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"1.58",
+   "precip":"14.84090909"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2014,
+   "vegTotal":"323.91",
+   "cottonwoodSum":"21.75",
+   "rusOliveSum":"9.95",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"14.89166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2014,
+   "vegTotal":"228.41",
+   "cottonwoodSum":"72.09",
+   "rusOliveSum":"12.43",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"10.07",
+   "precip":"14.90833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2010,
+   "vegTotal":"181.08",
+   "cottonwoodSum":"33.17",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"16.93",
+   "saltcedarSum":"NULL",
+   "precip":"14.92083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2005,
+   "vegTotal":"213.35",
+   "cottonwoodSum":"34.6",
+   "rusOliveSum":"28.77",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"15.04166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2012,
+   "vegTotal":"286.95",
+   "cottonwoodSum":"121.1",
+   "rusOliveSum":"1.12",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"15.10416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2009,
+   "vegTotal":"452.76",
+   "cottonwoodSum":"35.01",
+   "rusOliveSum":"31.88",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"4.61",
+   "precip":"15.17083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2002,
+   "vegTotal":"570.94",
+   "cottonwoodSum":"148.68",
+   "rusOliveSum":"14.42",
+   "nmOliveSum":"1.14",
+   "saltcedarSum":"NULL",
+   "precip":"15.17916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2000,
+   "vegTotal":"534.16",
+   "cottonwoodSum":"155.79",
+   "rusOliveSum":"8.21",
+   "nmOliveSum":"1.35",
+   "saltcedarSum":"NULL",
+   "precip":"15.18333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2015,
+   "vegTotal":"416.61",
+   "cottonwoodSum":"117.58",
+   "rusOliveSum":"89.29",
+   "nmOliveSum":"1.53",
+   "saltcedarSum":"128.46",
+   "precip":"15.30416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2010,
+   "vegTotal":"210.61",
+   "cottonwoodSum":"148.34",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"15.33333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2008,
+   "vegTotal":"335.76",
+   "cottonwoodSum":"14.17",
+   "rusOliveSum":"28.32",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"18.97",
+   "precip":"15.35"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2010,
+   "vegTotal":"276.69",
+   "cottonwoodSum":"153.53",
+   "rusOliveSum":"54.69",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"23.17",
+   "precip":"15.38333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2013,
+   "vegTotal":"401.33",
+   "cottonwoodSum":"35.64",
+   "rusOliveSum":"79.78",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"15.40833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2009,
+   "vegTotal":"294.95",
+   "cottonwoodSum":"159.21",
+   "rusOliveSum":"1.9",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"15.45833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2007,
+   "vegTotal":"294.07",
+   "cottonwoodSum":"12.5",
+   "rusOliveSum":"22.18",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"52.03",
+   "precip":"15.47083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2010,
+   "vegTotal":"479.57",
+   "cottonwoodSum":"38.4",
+   "rusOliveSum":"91.99",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"15.48"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2010,
+   "vegTotal":"245.03",
+   "cottonwoodSum":"155.14",
+   "rusOliveSum":"38.09",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"6.54",
+   "precip":"15.48333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2005,
+   "vegTotal":"155.57",
+   "cottonwoodSum":"81.9",
+   "rusOliveSum":"4.64",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"5.49",
+   "precip":"15.5"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2009,
+   "vegTotal":"376.43",
+   "cottonwoodSum":"175.45",
+   "rusOliveSum":"3.32",
+   "nmOliveSum":"164.22",
+   "saltcedarSum":"1.19",
+   "precip":"15.52083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2007,
+   "vegTotal":"605.76",
+   "cottonwoodSum":"154.59",
+   "rusOliveSum":"21.64",
+   "nmOliveSum":"1.56",
+   "saltcedarSum":"NULL",
+   "precip":"15.58181818"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2003,
+   "vegTotal":"340.44",
+   "cottonwoodSum":"68.84",
+   "rusOliveSum":"85.65",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"49.62",
+   "precip":"15.68333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2005,
+   "vegTotal":"257.74",
+   "cottonwoodSum":"158.2",
+   "rusOliveSum":"0.37",
+   "nmOliveSum":"11.59",
+   "saltcedarSum":"NULL",
+   "precip":"15.76363636"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2005,
+   "vegTotal":"625.76",
+   "cottonwoodSum":"144.3",
+   "rusOliveSum":"27.59",
+   "nmOliveSum":"2.5",
+   "saltcedarSum":"NULL",
+   "precip":"15.775"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2006,
+   "vegTotal":"346.45",
+   "cottonwoodSum":"45.09",
+   "rusOliveSum":"61.21",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"40.89",
+   "precip":"15.79545455"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2005,
+   "vegTotal":"290.41",
+   "cottonwoodSum":"175.13",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"15.80909091"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2010,
+   "vegTotal":"505.33",
+   "cottonwoodSum":"258.85",
+   "rusOliveSum":"33.2",
+   "nmOliveSum":"1.63",
+   "saltcedarSum":"NULL",
+   "precip":"15.85833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2005,
+   "vegTotal":"102.25",
+   "cottonwoodSum":"22",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"26.17",
+   "precip":"15.9125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2013,
+   "vegTotal":"299.78",
+   "cottonwoodSum":"172.98",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.07",
+   "saltcedarSum":"23.94",
+   "precip":"15.99166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2004,
+   "vegTotal":"449.01",
+   "cottonwoodSum":"91.36",
+   "rusOliveSum":"98.38",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"74.25",
+   "precip":"16.04166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2008,
+   "vegTotal":"465.32",
+   "cottonwoodSum":"28.35",
+   "rusOliveSum":"30.11",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"4.83",
+   "precip":"16.04166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2014,
+   "vegTotal":"403.23",
+   "cottonwoodSum":"110.21",
+   "rusOliveSum":"54.64",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.71",
+   "precip":"16.05416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2008,
+   "vegTotal":"488.68",
+   "cottonwoodSum":"137.05",
+   "rusOliveSum":"97.74",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"16.225"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2010,
+   "vegTotal":"161.57",
+   "cottonwoodSum":"19.61",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.78",
+   "saltcedarSum":"26.19",
+   "precip":"16.25"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2007,
+   "vegTotal":"287.12",
+   "cottonwoodSum":"55.05",
+   "rusOliveSum":"36.52",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.9",
+   "precip":"16.26666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2010,
+   "vegTotal":"452.39",
+   "cottonwoodSum":"110.47",
+   "rusOliveSum":"3.08",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"1.36",
+   "precip":"16.275"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2013,
+   "vegTotal":"284.85",
+   "cottonwoodSum":"156.98",
+   "rusOliveSum":"6.25",
+   "nmOliveSum":"0.03",
+   "saltcedarSum":"NULL",
+   "precip":"16.325"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2005,
+   "vegTotal":"196.43",
+   "cottonwoodSum":"47.35",
+   "rusOliveSum":"14.98",
+   "nmOliveSum":"3.4",
+   "saltcedarSum":"12.27",
+   "precip":"16.33333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2014,
+   "vegTotal":"380.13",
+   "cottonwoodSum":"134.16",
+   "rusOliveSum":"97.32",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"16.375"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2014,
+   "vegTotal":"495.91",
+   "cottonwoodSum":"198.98",
+   "rusOliveSum":"45.3",
+   "nmOliveSum":"1.86",
+   "saltcedarSum":"NULL",
+   "precip":"16.38125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2007,
+   "vegTotal":"510.02",
+   "cottonwoodSum":"126.03",
+   "rusOliveSum":"105.02",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"16.39166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2007,
+   "vegTotal":"186.49",
+   "cottonwoodSum":"44.92",
+   "rusOliveSum":"33.74",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"8.63",
+   "precip":"16.45833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2006,
+   "vegTotal":"216.41",
+   "cottonwoodSum":"142.61",
+   "rusOliveSum":"7.3",
+   "nmOliveSum":"3.86",
+   "saltcedarSum":"2.02",
+   "precip":"16.4625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.3896,35.50989 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Forest",
+   "siteNo":24,
+   "year":2008,
+   "vegTotal":"117.41",
+   "cottonwoodSum":"57.09",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"7.55",
+   "saltcedarSum":"NULL",
+   "precip":"16.67727273"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2007,
+   "vegTotal":"406.56",
+   "cottonwoodSum":"170.27",
+   "rusOliveSum":"0.42",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"16.775"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2003,
+   "vegTotal":"191.87",
+   "cottonwoodSum":"41.2",
+   "rusOliveSum":"38.19",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"3.21",
+   "precip":"16.83333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2013,
+   "vegTotal":"236.23",
+   "cottonwoodSum":"62.3",
+   "rusOliveSum":"17.69",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"18.89",
+   "precip":"16.87083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2000,
+   "vegTotal":"339.36",
+   "cottonwoodSum":"252.2",
+   "rusOliveSum":"21.57",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"1.24",
+   "precip":"16.88636364"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2010,
+   "vegTotal":"350.7",
+   "cottonwoodSum":"42.9",
+   "rusOliveSum":"3.13",
+   "nmOliveSum":"1.41",
+   "saltcedarSum":"NULL",
+   "precip":"17.04583333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2015,
+   "vegTotal":"90.94",
+   "cottonwoodSum":"10.13",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"2.56",
+   "saltcedarSum":"26",
+   "precip":"17.0625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2013,
+   "vegTotal":"275.78",
+   "cottonwoodSum":"135.5",
+   "rusOliveSum":"48.33",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"6.25",
+   "precip":"17.15"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7434661,34.637511 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Cleared",
+   "siteNo":25,
+   "year":2014,
+   "vegTotal":"284.81",
+   "cottonwoodSum":"",
+   "rusOliveSum":"12.03",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"23.97",
+   "precip":"17.16666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2013,
+   "vegTotal":"304.34",
+   "cottonwoodSum":"154.11",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.04",
+   "saltcedarSum":"NULL",
+   "precip":"17.21666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2010,
+   "vegTotal":"365.48",
+   "cottonwoodSum":"130.31",
+   "rusOliveSum":"3.02",
+   "nmOliveSum":"162.85",
+   "saltcedarSum":"0.66",
+   "precip":"17.25"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8831845,34.258342 ]
+   },
+   "properties": {
+   "siteName":"Rt 66",
+   "siteNo":14,
+   "year":2006,
+   "vegTotal":"505.7",
+   "cottonwoodSum":"98.31",
+   "rusOliveSum":"135.14",
+   "nmOliveSum":"0.68",
+   "saltcedarSum":"73.06",
+   "precip":"17.36666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2004,
+   "vegTotal":"586.41",
+   "cottonwoodSum":"139.99",
+   "rusOliveSum":"27.02",
+   "nmOliveSum":"2.35",
+   "saltcedarSum":"NULL",
+   "precip":"17.46818182"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2013,
+   "vegTotal":"208.8",
+   "cottonwoodSum":"41.17",
+   "rusOliveSum":"0.89",
+   "nmOliveSum":"8.54",
+   "saltcedarSum":"0.25",
+   "precip":"17.4875"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2015,
+   "vegTotal":"299.91",
+   "cottonwoodSum":"64.15",
+   "rusOliveSum":"53.57",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"3.48",
+   "precip":"17.70416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2013,
+   "vegTotal":"322.01",
+   "cottonwoodSum":"15.76",
+   "rusOliveSum":"6.06",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"17.725"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2004,
+   "vegTotal":"395.72",
+   "cottonwoodSum":"161.43",
+   "rusOliveSum":"61.23",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"138.45",
+   "precip":"17.8125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7202778,35.066889 ]
+   },
+   "properties": {
+   "siteName":"Los Lunas",
+   "siteNo":23,
+   "year":2007,
+   "vegTotal":"279.47",
+   "cottonwoodSum":"177.42",
+   "rusOliveSum":"8.34",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"5.5",
+   "precip":"17.9"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2006,
+   "vegTotal":"332.61",
+   "cottonwoodSum":"177",
+   "rusOliveSum":"0.27",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"18.02727273"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2013,
+   "vegTotal":"406.61",
+   "cottonwoodSum":"169.9",
+   "rusOliveSum":"42.52",
+   "nmOliveSum":"2.18",
+   "saltcedarSum":"NULL",
+   "precip":"18.06666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2007,
+   "vegTotal":"206.85",
+   "cottonwoodSum":"54.07",
+   "rusOliveSum":"11.49",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"9.39",
+   "precip":"18.10416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2013,
+   "vegTotal":"193.52",
+   "cottonwoodSum":"145.8",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"16.15",
+   "saltcedarSum":"0.34",
+   "precip":"18.12916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2007,
+   "vegTotal":"270.83",
+   "cottonwoodSum":"145.01",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"11.98",
+   "saltcedarSum":"0.25",
+   "precip":"18.15833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2008,
+   "vegTotal":"276.44",
+   "cottonwoodSum":"263.56",
+   "rusOliveSum":"0.05",
+   "nmOliveSum":"0.74",
+   "saltcedarSum":"NULL",
+   "precip":"18.1875"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2007,
+   "vegTotal":"264.77",
+   "cottonwoodSum":"95.54",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"18.22083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.3896,35.50989 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Forest",
+   "siteNo":24,
+   "year":2009,
+   "vegTotal":"194.11",
+   "cottonwoodSum":"9.1",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"14.12",
+   "saltcedarSum":"NULL",
+   "precip":"18.245"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2004,
+   "vegTotal":"280.67",
+   "cottonwoodSum":"139.02",
+   "rusOliveSum":"39.24",
+   "nmOliveSum":"13.77",
+   "saltcedarSum":"23.85",
+   "precip":"18.3375"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2013,
+   "vegTotal":"356.5",
+   "cottonwoodSum":"129.97",
+   "rusOliveSum":"3.6",
+   "nmOliveSum":"171.07",
+   "saltcedarSum":"1.77",
+   "precip":"18.35833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2005,
+   "vegTotal":"295.96",
+   "cottonwoodSum":"165.89",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"18.39090909"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2007,
+   "vegTotal":"340.94",
+   "cottonwoodSum":"175.78",
+   "rusOliveSum":"2.93",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"18.42916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2007,
+   "vegTotal":"128.88",
+   "cottonwoodSum":"23.48",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.64",
+   "saltcedarSum":"24.21",
+   "precip":"18.47916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6914783,35.100641 ]
+   },
+   "properties": {
+   "siteName":"VDO (Valle de Oro)",
+   "siteNo":20,
+   "year":2005,
+   "vegTotal":"223.63",
+   "cottonwoodSum":"64.36",
+   "rusOliveSum":"24.14",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.83",
+   "precip":"18.53181818"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2015,
+   "vegTotal":"424.72",
+   "cottonwoodSum":"164.1",
+   "rusOliveSum":"9.82",
+   "nmOliveSum":"6.59",
+   "saltcedarSum":"NULL",
+   "precip":"18.6"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2013,
+   "vegTotal":"142.05",
+   "cottonwoodSum":"137.71",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.29",
+   "saltcedarSum":"13.87",
+   "precip":"18.62272727"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2015,
+   "vegTotal":"326.92",
+   "cottonwoodSum":"170.5",
+   "rusOliveSum":"10.3",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"18.64166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6801,34.97895 ]
+   },
+   "properties": {
+   "siteName":"Valencia Forest",
+   "siteNo":28,
+   "year":2015,
+   "vegTotal":"NULL",
+   "cottonwoodSum":"NULL",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"18.7125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2007,
+   "vegTotal":"249.94",
+   "cottonwoodSum":"155.64",
+   "rusOliveSum":"0.79",
+   "nmOliveSum":"6.2",
+   "saltcedarSum":"0.37",
+   "precip":"18.7375"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2010,
+   "vegTotal":"274.1",
+   "cottonwoodSum":"27.36",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"1.46",
+   "saltcedarSum":"NULL",
+   "precip":"18.76363636"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2004,
+   "vegTotal":"350.66",
+   "cottonwoodSum":"38.67",
+   "rusOliveSum":"44.77",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"17.13",
+   "precip":"18.81"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7202778,35.066889 ]
+   },
+   "properties": {
+   "siteName":"Los Lunas",
+   "siteNo":23,
+   "year":2013,
+   "vegTotal":"207.36",
+   "cottonwoodSum":"73.35",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"18.82916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2010,
+   "vegTotal":"310.82",
+   "cottonwoodSum":"61.74",
+   "rusOliveSum":"4.47",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"18.86666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2007,
+   "vegTotal":"226.52",
+   "cottonwoodSum":"38.07",
+   "rusOliveSum":"5.2",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"18.87083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2008,
+   "vegTotal":"373.97",
+   "cottonwoodSum":"153.65",
+   "rusOliveSum":"55.98",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"134.01",
+   "precip":"18.9875"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2014,
+   "vegTotal":"240.86",
+   "cottonwoodSum":"56.56",
+   "rusOliveSum":"1.68",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"19.04166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2006,
+   "vegTotal":"359.03",
+   "cottonwoodSum":"161.29",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"19.10454545"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6416219,35.195569 ]
+   },
+   "properties": {
+   "siteName":"SLO (State Land Office)",
+   "siteNo":21,
+   "year":2015,
+   "vegTotal":"345.98",
+   "cottonwoodSum":"128.28",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"19.1875"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2007,
+   "vegTotal":"382.65",
+   "cottonwoodSum":"172.35",
+   "rusOliveSum":"4.21",
+   "nmOliveSum":"169.75",
+   "saltcedarSum":"0.55",
+   "precip":"19.225"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2004,
+   "vegTotal":"279.56",
+   "cottonwoodSum":"36.55",
+   "rusOliveSum":"27.02",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"0.43",
+   "precip":"19.26666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646915,35.193151 ]
+   },
+   "properties": {
+   "siteName":"Savannah",
+   "siteNo":12,
+   "year":2015,
+   "vegTotal":"278.77",
+   "cottonwoodSum":"143.03",
+   "rusOliveSum":"2.95",
+   "nmOliveSum":"8.77",
+   "saltcedarSum":"0.56",
+   "precip":"19.32916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2006,
+   "vegTotal":"375.88",
+   "cottonwoodSum":"37.25",
+   "rusOliveSum":"32.95",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"19.34166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2015,
+   "vegTotal":"389.98",
+   "cottonwoodSum":"33.9",
+   "rusOliveSum":"12.72",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"1.94",
+   "precip":"19.63636364"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2004,
+   "vegTotal":"217.01",
+   "cottonwoodSum":"23.21",
+   "rusOliveSum":"10.55",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.22",
+   "precip":"19.7125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2005,
+   "vegTotal":"326.05",
+   "cottonwoodSum":"15.42",
+   "rusOliveSum":"13",
+   "nmOliveSum":"0.95",
+   "saltcedarSum":"9.69",
+   "precip":"19.75909091"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2003,
+   "vegTotal":"440.81",
+   "cottonwoodSum":"106.67",
+   "rusOliveSum":"94.23",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"101.01",
+   "precip":"19.80833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2006,
+   "vegTotal":"384.67",
+   "cottonwoodSum":"27.87",
+   "rusOliveSum":"26.24",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"6",
+   "precip":"19.90416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7434661,34.637511 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Cleared",
+   "siteNo":25,
+   "year":2013,
+   "vegTotal":"244.82",
+   "cottonwoodSum":"197.78",
+   "rusOliveSum":"6.86",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"28.76",
+   "precip":"19.97916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2013,
+   "vegTotal":"348.84",
+   "cottonwoodSum":"31.01",
+   "rusOliveSum":"7.25",
+   "nmOliveSum":"7.98",
+   "saltcedarSum":"NULL",
+   "precip":"20.025"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2005,
+   "vegTotal":"515.66",
+   "cottonwoodSum":"97.55",
+   "rusOliveSum":"87.59",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"112.31",
+   "precip":"20.1875"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6856,34.96785 ]
+   },
+   "properties": {
+   "siteName":"Sevilleta",
+   "siteNo":30,
+   "year":2014,
+   "vegTotal":"183.27",
+   "cottonwoodSum":"95.64",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.13",
+   "saltcedarSum":"0.14",
+   "precip":"20.58333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6803699,35.145288 ]
+   },
+   "properties": {
+   "siteName":"AOP/Umbreit (Albuquerque Overbank Project)",
+   "siteNo":17,
+   "year":2015,
+   "vegTotal":"301.1",
+   "cottonwoodSum":"61.44",
+   "rusOliveSum":"40.35",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"20.625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2013,
+   "vegTotal":"277.61",
+   "cottonwoodSum":"123.16",
+   "rusOliveSum":"45.64",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"105.85",
+   "precip":"20.81818182"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2015,
+   "vegTotal":"221.44",
+   "cottonwoodSum":"131.68",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"5.47",
+   "saltcedarSum":"2.13",
+   "precip":"20.84090909"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2015,
+   "vegTotal":"364.49",
+   "cottonwoodSum":"182.29",
+   "rusOliveSum":"106.88",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"20.94166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2015,
+   "vegTotal":"412.81",
+   "cottonwoodSum":"58.39",
+   "rusOliveSum":"61.59",
+   "nmOliveSum":"4.67",
+   "saltcedarSum":"2.29",
+   "precip":"20.95416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2006,
+   "vegTotal":"211.28",
+   "cottonwoodSum":"138.72",
+   "rusOliveSum":"0.14",
+   "nmOliveSum":"10.05",
+   "saltcedarSum":"0.13",
+   "precip":"21.01666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2013,
+   "vegTotal":"250.34",
+   "cottonwoodSum":"65.47",
+   "rusOliveSum":"3.03",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"21.0875"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7202778,35.066889 ]
+   },
+   "properties": {
+   "siteName":"Los Lunas",
+   "siteNo":23,
+   "year":2015,
+   "vegTotal":"278.19",
+   "cottonwoodSum":"170.61",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"21.15416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.3896,35.50989 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Forest",
+   "siteNo":24,
+   "year":2015,
+   "vegTotal":"256.96",
+   "cottonwoodSum":"68.68",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"7.95",
+   "saltcedarSum":"NULL",
+   "precip":"21.31363636"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7202778,35.066889 ]
+   },
+   "properties": {
+   "siteName":"Los Lunas",
+   "siteNo":23,
+   "year":2010,
+   "vegTotal":"267.7",
+   "cottonwoodSum":"22.48",
+   "rusOliveSum":"13.85",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.9",
+   "precip":"21.36666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2004,
+   "vegTotal":"116.22",
+   "cottonwoodSum":"88.85",
+   "rusOliveSum":"9.15",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"3.82",
+   "precip":"21.375"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2006,
+   "vegTotal":"124.64",
+   "cottonwoodSum":"84.81",
+   "rusOliveSum":"1.4",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"1.68",
+   "precip":"21.5"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6491626,35.190568 ]
+   },
+   "properties": {
+   "siteName":"Montano",
+   "siteNo":11,
+   "year":2015,
+   "vegTotal":"231.82",
+   "cottonwoodSum":"139.98",
+   "rusOliveSum":"0.11",
+   "nmOliveSum":"17.3",
+   "saltcedarSum":"1.19",
+   "precip":"21.50416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2000,
+   "vegTotal":"278.6",
+   "cottonwoodSum":"57.1",
+   "rusOliveSum":"47.39",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"20.23",
+   "precip":"21.555"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2015,
+   "vegTotal":"254.48",
+   "cottonwoodSum":"42.77",
+   "rusOliveSum":"8",
+   "nmOliveSum":"0.45",
+   "saltcedarSum":"21.37",
+   "precip":"21.57916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2013,
+   "vegTotal":"352.98",
+   "cottonwoodSum":"54.52",
+   "rusOliveSum":"84.98",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"21.61666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7421328,34.659664 ]
+   },
+   "properties": {
+   "siteName":"Harrison",
+   "siteNo":18,
+   "year":2008,
+   "vegTotal":"254.83",
+   "cottonwoodSum":"85.98",
+   "rusOliveSum":"0.98",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"2.72",
+   "precip":"21.63333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2006,
+   "vegTotal":"384.3",
+   "cottonwoodSum":"156.58",
+   "rusOliveSum":"61.21",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"139.1",
+   "precip":"21.79583333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2004,
+   "vegTotal":"523.64",
+   "cottonwoodSum":"122.72",
+   "rusOliveSum":"99.22",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"21.90416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2000,
+   "vegTotal":"622.81",
+   "cottonwoodSum":"70.06",
+   "rusOliveSum":"84.17",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"22.55"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6856,34.96785 ]
+   },
+   "properties": {
+   "siteName":"Sevilleta",
+   "siteNo":30,
+   "year":2015,
+   "vegTotal":"325.37",
+   "cottonwoodSum":"106.92",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.39",
+   "saltcedarSum":"1.72",
+   "precip":"22.55833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2006,
+   "vegTotal":"250.92",
+   "cottonwoodSum":"58.92",
+   "rusOliveSum":"12.04",
+   "nmOliveSum":"0.5",
+   "saltcedarSum":"14.12",
+   "precip":"22.90833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6580575,35.068813 ]
+   },
+   "properties": {
+   "siteName":"Minnow",
+   "siteNo":8,
+   "year":2004,
+   "vegTotal":"193.84",
+   "cottonwoodSum":"154.3",
+   "rusOliveSum":"0.69",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"22.975"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2004,
+   "vegTotal":"249.67",
+   "cottonwoodSum":"10.69",
+   "rusOliveSum":"7.2",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"5.78",
+   "precip":"23.22916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7434661,34.637511 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Cleared",
+   "siteNo":25,
+   "year":2015,
+   "vegTotal":"300.48",
+   "cottonwoodSum":"71.66",
+   "rusOliveSum":"18.57",
+   "nmOliveSum":"0.8",
+   "saltcedarSum":"23.53",
+   "precip":"23.35833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6736953,35.015056 ]
+   },
+   "properties": {
+   "siteName":"RGNC (Rio Grande Nature Center)",
+   "siteNo":13,
+   "year":2007,
+   "vegTotal":"430.92",
+   "cottonwoodSum":"38.91",
+   "rusOliveSum":"19.17",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"5.98",
+   "precip":"23.4125"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2015,
+   "vegTotal":"345.66",
+   "cottonwoodSum":"21.05",
+   "rusOliveSum":"1.34",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"4.5",
+   "precip":"23.44166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2004,
+   "vegTotal":"200.23",
+   "cottonwoodSum":"21.03",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.97",
+   "saltcedarSum":"21.67",
+   "precip":"23.595"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6819814,35.142853 ]
+   },
+   "properties": {
+   "siteName":"Bobcat",
+   "siteNo":6,
+   "year":2015,
+   "vegTotal":"344.11",
+   "cottonwoodSum":"46.49",
+   "rusOliveSum":"84.58",
+   "nmOliveSum":"0.35",
+   "saltcedarSum":"30.83",
+   "precip":"23.72916667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7391728,34.648634 ]
+   },
+   "properties": {
+   "siteName":"BioPark",
+   "siteNo":15,
+   "year":2006,
+   "vegTotal":"330.53",
+   "cottonwoodSum":"24.71",
+   "rusOliveSum":"47.34",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"7.34",
+   "precip":"23.75416667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2004,
+   "vegTotal":"439.02",
+   "cottonwoodSum":"101.15",
+   "rusOliveSum":"97.07",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"91.96",
+   "precip":"23.77083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2004,
+   "vegTotal":"276.84",
+   "cottonwoodSum":"165.09",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"23.95"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7429525,34.660546 ]
+   },
+   "properties": {
+   "siteName":"San Jose",
+   "siteNo":19,
+   "year":2015,
+   "vegTotal":"321.42",
+   "cottonwoodSum":"164",
+   "rusOliveSum":"10.48",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"15.58",
+   "precip":"23.96666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6884322,35.126753 ]
+   },
+   "properties": {
+   "siteName":"Santo Domingo",
+   "siteNo":2,
+   "year":2015,
+   "vegTotal":"272.72",
+   "cottonwoodSum":"137.53",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"23.97083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2004,
+   "vegTotal":"379.42",
+   "cottonwoodSum":"194.05",
+   "rusOliveSum":"6.42",
+   "nmOliveSum":"153.54",
+   "saltcedarSum":"0.45",
+   "precip":"24.12272727"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7377022,34.648432 ]
+   },
+   "properties": {
+   "siteName":"Sandia",
+   "siteNo":4,
+   "year":2006,
+   "vegTotal":"449.18",
+   "cottonwoodSum":"154.35",
+   "rusOliveSum":"102.45",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"24.16666667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2006,
+   "vegTotal":"366.53",
+   "cottonwoodSum":"183.71",
+   "rusOliveSum":"3.48",
+   "nmOliveSum":"157.06",
+   "saltcedarSum":"NULL",
+   "precip":"24.2625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.646919,35.188051 ]
+   },
+   "properties": {
+   "siteName":"Ohkay Owingeh",
+   "siteNo":1,
+   "year":2015,
+   "vegTotal":"357.98",
+   "cottonwoodSum":"146.73",
+   "rusOliveSum":"3.33",
+   "nmOliveSum":"168.41",
+   "saltcedarSum":"3.18",
+   "precip":"24.84583333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2015,
+   "vegTotal":"225.55",
+   "cottonwoodSum":"136.69",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"6.13",
+   "saltcedarSum":"NULL",
+   "precip":"25.5625"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.738482,34.647162 ]
+   },
+   "properties": {
+   "siteName":"NHCC (National Hispanic Cultural Center)",
+   "siteNo":16,
+   "year":2006,
+   "vegTotal":"491.69",
+   "cottonwoodSum":"93.55",
+   "rusOliveSum":"111.5",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"111.68",
+   "precip":"25.69583333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7434661,34.637511 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Cleared",
+   "siteNo":25,
+   "year":2011,
+   "vegTotal":"117.98",
+   "cottonwoodSum":"168.76",
+   "rusOliveSum":"1.33",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"12.21",
+   "precip":"25.725"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.3896,35.50989 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Forest",
+   "siteNo":24,
+   "year":2013,
+   "vegTotal":"187.38",
+   "cottonwoodSum":"52.47",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"8.08",
+   "saltcedarSum":"NULL",
+   "precip":"26.89166667"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.3896,35.50989 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Forest",
+   "siteNo":24,
+   "year":2010,
+   "vegTotal":"234.36",
+   "cottonwoodSum":"201.21",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"7.63",
+   "saltcedarSum":"NULL",
+   "precip":"27.13333333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6441893,35.191958 ]
+   },
+   "properties": {
+   "siteName":"Alameda",
+   "siteNo":10,
+   "year":2004,
+   "vegTotal":"220.4",
+   "cottonwoodSum":"68.21",
+   "rusOliveSum":"18.18",
+   "nmOliveSum":"1.23",
+   "saltcedarSum":"16.12",
+   "precip":"28.295"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.8899486,34.167032 ]
+   },
+   "properties": {
+   "siteName":"Diversion",
+   "siteNo":7,
+   "year":2006,
+   "vegTotal":"366.32",
+   "cottonwoodSum":"18.94",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"0.87",
+   "saltcedarSum":"28.98",
+   "precip":"28.77083333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.714458,34.812369 ]
+   },
+   "properties": {
+   "siteName":"Santa Ana",
+   "siteNo":3,
+   "year":2015,
+   "vegTotal":"446.75",
+   "cottonwoodSum":"107.37",
+   "rusOliveSum":"42.78",
+   "nmOliveSum":"1.74",
+   "saltcedarSum":"NULL",
+   "precip":"29.35833333"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2002,
+   "vegTotal":"441.77",
+   "cottonwoodSum":"85.4",
+   "rusOliveSum":"5.08",
+   "nmOliveSum":"12.97",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2003,
+   "vegTotal":"624.64",
+   "cottonwoodSum":"99.99",
+   "rusOliveSum":"4.55",
+   "nmOliveSum":"19.33",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2004,
+   "vegTotal":"272.24",
+   "cottonwoodSum":"270.15",
+   "rusOliveSum":"0.38",
+   "nmOliveSum":"0.15",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2004,
+   "vegTotal":"530.85",
+   "cottonwoodSum":"29.55",
+   "rusOliveSum":"4.3",
+   "nmOliveSum":"4.27",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2005,
+   "vegTotal":"280.23",
+   "cottonwoodSum":"272.01",
+   "rusOliveSum":"1.3",
+   "nmOliveSum":"3.04",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2005,
+   "vegTotal":"496.57",
+   "cottonwoodSum":"38.99",
+   "rusOliveSum":"4.29",
+   "nmOliveSum":"7.38",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.5458,35.34284 ]
+   },
+   "properties": {
+   "siteName":"Badger",
+   "siteNo":5,
+   "year":2006,
+   "vegTotal":"281.64",
+   "cottonwoodSum":"268.97",
+   "rusOliveSum":"1.72",
+   "nmOliveSum":"0.91",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2006,
+   "vegTotal":"524.34",
+   "cottonwoodSum":"40.4",
+   "rusOliveSum":"3.43",
+   "nmOliveSum":"9.17",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6439494,35.197056 ]
+   },
+   "properties": {
+   "siteName":"Bosque Farms",
+   "siteNo":22,
+   "year":2006,
+   "vegTotal":"306.41",
+   "cottonwoodSum":"160.86",
+   "rusOliveSum":"4.47",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2007,
+   "vegTotal":"562.02",
+   "cottonwoodSum":"33.43",
+   "rusOliveSum":"8.86",
+   "nmOliveSum":"20.8",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.3896,35.50989 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Forest",
+   "siteNo":24,
+   "year":2007,
+   "vegTotal":"144.94",
+   "cottonwoodSum":"52.61",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"6.72",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2008,
+   "vegTotal":"601.88",
+   "cottonwoodSum":"31.17",
+   "rusOliveSum":"16.15",
+   "nmOliveSum":"25.67",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7434661,34.637511 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Cleared",
+   "siteNo":25,
+   "year":2008,
+   "vegTotal":"293.31",
+   "cottonwoodSum":"",
+   "rusOliveSum":"28.11",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"13.12",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2009,
+   "vegTotal":"535.11",
+   "cottonwoodSum":"44.64",
+   "rusOliveSum":"2.57",
+   "nmOliveSum":"43.37",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7434661,34.637511 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Cleared",
+   "siteNo":25,
+   "year":2009,
+   "vegTotal":"2009",
+   "cottonwoodSum":"152.47",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7434661,34.637511 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Cleared",
+   "siteNo":25,
+   "year":2009,
+   "vegTotal":"239.58",
+   "cottonwoodSum":"174.16",
+   "rusOliveSum":"3.99",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"17.52",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2010,
+   "vegTotal":"635.27",
+   "cottonwoodSum":"132.79",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"11.58",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.7434661,34.637511 ]
+   },
+   "properties": {
+   "siteName":"Reynolds Cleared",
+   "siteNo":25,
+   "year":2010,
+   "vegTotal":"302.86",
+   "cottonwoodSum":"135.07",
+   "rusOliveSum":"0.72",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"15.59",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2011,
+   "vegTotal":"574.26",
+   "cottonwoodSum":"168.97",
+   "rusOliveSum":"2.21",
+   "nmOliveSum":"10.21",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2012,
+   "vegTotal":"508.17",
+   "cottonwoodSum":"143.18",
+   "rusOliveSum":"4.44",
+   "nmOliveSum":"25.02",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2013,
+   "vegTotal":"455.22",
+   "cottonwoodSum":"NULL",
+   "rusOliveSum":"2.96",
+   "nmOliveSum":"24.94",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2014,
+   "vegTotal":"441.24",
+   "cottonwoodSum":"37.74",
+   "rusOliveSum":"4.34",
+   "nmOliveSum":"34.44",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.6801,34.97895 ]
+   },
+   "properties": {
+   "siteName":"Valencia Forest",
+   "siteNo":28,
+   "year":2014,
+   "vegTotal":"341.27",
+   "cottonwoodSum":"NULL",
+   "rusOliveSum":"NULL",
+   "nmOliveSum":"NULL",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ },
+ {
+   "type": "Feature",
+   "geometry": {
+      "type": "Point",
+      "coordinates":  [ -106.0761,36.0618 ]
+   },
+   "properties": {
+   "siteName":"Calabacillas",
+   "siteNo":9,
+   "year":2015,
+   "vegTotal":"449.39",
+   "cottonwoodSum":"1.04",
+   "rusOliveSum":"6.59",
+   "nmOliveSum":"38.91",
+   "saltcedarSum":"NULL",
+   "precip":"NULL"
+   }
+ }
+]
+});

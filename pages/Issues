@@ -1,0 +1,10 @@
+### Monday April 11th 
+## Issues with putting the map into our container. 
+
+## Week of April 11 - April 18th
+Katie: Issues displaying map within leaflet-timeline-slider.... folder. This is slowly but surely coming along. Right now some geojson points are being read in and a timeline is displayed.
+4-12 Got the basemap showing. Need to integrate the getDataAddMarkers (geojson points) and the filter function (timeline) together.
+
+Frankie:
+
+Emily: 
