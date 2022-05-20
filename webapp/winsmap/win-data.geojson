@@ -1,0 +1,457 @@
+{"type":"FeatureCollection",
+    "features":[
+        {
+        "type":"Feature",
+        "properties":{
+            "Organization":"Arizona Diamondbacks",
+                "MLBwin":".321",
+                "AAAwin":".585",
+                "Differential":"-.264",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -112.066664,
+                        33.445526
+                    ]
+                }
+            }
+        },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Atlanta Braves",
+                "MLBwin":".547",
+                "AAAwin":".",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -84.468239,
+                        33.890781
+                    ]
+                }
+            }
+        },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Baltimore Orioles",
+                "MLBwin":".321",
+                "AAAwin":"",
+                "Differential":"-",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -76621512,
+                        39.284052
+                    ]
+                }
+            }
+        },
+
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Boston Red Sox",
+                "MLBwin":".568",
+                "AAAwin":"",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -71.097218,
+                        42.346676
+                    ]
+                }
+            }
+        },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Cincinnati Reds",
+                "MLBwin":".512",
+                "AAAwin":".",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -84.508151,
+                        39.097931
+                    ]
+                }
+            }
+        },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Chicago Cubs",
+                "MLBwin":".438",
+                "AAAwin":"",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -87.655333,
+                        41.948428
+                    ]
+                }
+            }
+        },
+
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Chicago White Sox",
+                "MLBwin":".574",
+                "AAAwin":".",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -87.633752,
+                        41.829902
+                    ]
+                }
+            }
+        },            
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Cleveland Guardians",
+                "MLBwin":".494",
+                "AAAwin":"",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -75.17362857,
+                        39.9249462
+                    ]
+                }
+            }
+        },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Colorado Rockies",
+                "MLBwin":".460",
+                "AAAwin":"",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -104.994178,
+                        39.755882
+                    ]
+                }
+            }
+        },    
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Detroit Tigers",
+                "MLBwin":".475",
+                "AAAwin":"",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -83.04852,
+                        42.338998
+                    ]
+                }
+            }
+        },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Houston Astros",
+                "MLBwin":".586",
+                "AAAwin":"",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -95.354538,
+                        29.757697
+                    ]
+                }
+            }
+        },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Kansas City Royals",
+                    "MLBwin":".457",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -94.480314,
+                            39.051672
+                        ]
+                    }
+                }
+            },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Los Angeles Dodgers",
+                "MLBwin":".654",
+                "AAAwin":"",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -118.239958,
+                        34.073851
+                    ]
+                }
+            }
+        },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Los Angeles Angels",
+                "MLBwin":".475",
+                "AAAwin":"",
+                "Differential":"",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -117.882732,
+                        33.800308
+                    ]
+                }
+            }
+        },
+    {"type": "Feature",
+        "properties": {
+            "Organization": "Miami Marlins",
+                "MLBwin": ".414",
+                "AAAwin": "",
+                "Differential": "",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -80.219597,
+                        25.778318
+                    ]
+                }
+            }
+        },
+    {"type": "Feature",
+        "properties": {
+            "Organization": "Milwaukee Brewers",
+                "MLBwin": ".586",
+                "AAAwin": "",
+                "Differential": "",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -87.97115,
+                        43.027978
+                    ]
+                }
+            }
+        },
+    {"type": "Feature",
+        "properties": {
+            "Organization": "Minnesota Twins",
+                "MLBwin": ".451",
+                "AAAwin": "",
+                "Differential": "",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        -93.27776,
+                        44.981712
+                    ]
+                }
+            }
+        },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"New York Mets",
+                    "MLBwin":".586",
+                    "AAAwin":".475",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -73.845821,
+                            40.757088
+                        ]
+                    }
+                }
+            },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"New York Yankees",
+                    "MLBwin":".568",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -73.926175,
+                            40.829643
+                        ]
+                    }
+                }
+            },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Oakland Athletics",
+                    "MLBwin":".531",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -122.19821,
+                                37.752483
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Philadelphia Phillies",
+                    "MLB win percentage":".506",
+                    "AAA win percentage":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -75.166495,
+                                39.906057
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Pittsburgh Pirates",
+                    "MLB win percentage":".377",
+                    "AAA win percentage":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -80.005666,
+                                40.446855
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"San Diego Padres",
+                    "MLBwin":".488",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -117.156904,
+                                32.707656
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"San Francisco Giants",
+                    "MLBwin":".660",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            -122.38927,
+                            37.778595 
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Seattle Mariners",
+                    "MLBwin":".556",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -122.332327,
+                                47.591391
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"St. Louis Cardinals",
+                    "MLBwin":".586",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -90.192821,
+                                38.622619
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Tampa Bay Rays",
+                    "MLBwin":".617",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -82.653392,
+                                27.768225
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Texas Rangers",
+                    "MLBwin":".370",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -97.082504,
+                                32.75128
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Toronto Blue Jays",
+                    "MLBwin":".562",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -79.389353,
+                                43.641438
+                            ]
+                        }
+                    }
+                },
+    {"type":"Feature",
+        "properties":
+            {"Organization":"Washington Nationals",
+                    "MLBwin":".401",
+                    "AAAwin":"",
+                    "Differential":"",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                                -77.007433,
+                                38.87301
+                            ]
+                        }
+                    }
+                }
+    ]
+}

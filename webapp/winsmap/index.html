@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2021 MLB Win Percentage Differentials</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="mycss.css"/>
+  <!--Scripts for modal-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--Data-->
+  <script src="win-data.js"></script>
+  <!--Graph-->
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="graph.html"></script>
+
+  <style>
+    #mapId{ width: 1100px; height: 600px; }
+.circle:hover{
+  stroke: black;
+  stroke-width: 4px;
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="container col-sm-9">
+    <h2><b>Difference in W-L% in MLB teams & their Triple-A affiliates (2021)</b></h2>
+    </div>
+  
+      <!-- Create Leaflet map container -->
+      <div class= "col-sm-9">
+        <div id="mapId"></div>
+      </div>   
+  
+      
+  <!-- Set up "About" button modal -->
+  <!-- Source: https://www.w3schools.com/bootstrap/bootstrap_modal.asp -->
+  
+      <div class="container col-sm-3">
+        <div class="row">
+            <!-- About Modal -->
+              <!-- Trigger the modal with a button -->
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">About</button>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title"><b>About the project</b></h4>
+                    </div>
+                    <div class="modal-body">
+                      <h4><b>Abstract:</h4></b></h4>
+                      <p>Wins factor heavily into the current and future success of a team beyond just playoff qualification and likelihood of wining championships.
+                        Win-loss records also factor into where a team places in the draft, as well as factoring into their budget and therefore their ability to sign
+                        quality players. Thus, wins and losses in a Major League Baseball club have great implications on the direction of the team. A more comprehensive,
+                        but less examined, method of considering the same things is looking at win-loss records in Minor League Baseball (MiLB). While the goal of these affiliates
+                        is not to win, but rather to simply have a space for players to develop, wins and losses in MiLB can suggest a lot about the overall quality of an organization,
+                        such as its amount of promising players, the cohesion of those players, the skill of the coaching staff, etc. This web application seeks to provide a resource 
+                        for further research on these matters by providing both MLB and Triple-A win-loss records for the 2021 season, as well as the differences between the two records,
+                        provided both as a geovisualization and interactive graphs.
+                      </p>
+                      <h4><b>About the team:</h4></b></h4>
+                      <p><a href="http://flogan00.github.io" target="_blank">Francisco Logan</a>, masters student in Sport Admin</p>
+                      <h4><b>Acknowledgements:</h4></b></h4>
+                      <p><u>Data Sources:</u></p>
+                      <ul>
+                        <li>Win-loss records: <a href="https://www.baseball-reference.com/register/minor-league-stats.shtml" target="_blank">Baseball Reference</a></li>
+                        <li>Coordinates: <a href="http://thirdlanding.com/longitude-latitudes-mlb-stadiums/" target="_blank">Longitude and latitudes of MLB stadiums (Third Landing, 2017)</a></li>
+                        <li>Map icons by <a href="https://github.com/pointhi/leaflet-color-markers" target="_blank"> Pointhuber, et al (2020).</a></li>
+                      </ul>
+                      <p><u>Code Examples Referenced:</u></p>
+                      <ul>
+                        <li>This app was built primarily using the <a href="https://leafletjs.com/" target="_blank">Leaflet.js</a> and <a href="https://d3js.org/" target="_blank">D3.js</a> JavaScript libraries.</li>
+                        <li>This app also utilizes layer groups and layers control, with help provided by <a href="https://leafletjs.com/examples/layers-control/" target="_blank">Vladimir Agafonkin</a>.</li>
+                        <li>The About button is based on this <a href="https://www.w3schools.com/bootstrap/bootstrap_modal.asp" target="_blank">Bootstrap Modal Reference</a></li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+   
+              <br>
+              <u><h4>How to use</h4></u> 
+              <ul>
+                <li>Turn layers on and off using the <img src="img/layers.png" alt="layers"> panel</li>
+                <li>Use the zoom feature on the left to zoom in or out. You can also click and drag on the map to move.</li>
+                <li>Click on map icons for information</li>
+                <li>Scroll down for graph visualizations</li>
+                <li>The differential layer is </li>
+              </ul>
+              <br>
+              <u><h4>Legend</h4></u>
+              <p><img src="img/marker-icon-red.png" alt="red marker icon"> W-L% .600 and up </p>
+              <p><img src="img/marker-icon-orange.png" alt="orange marker icon"> W-L% .550 to .599 </p> 
+              <p><img src="img/marker-icon-gold.png" alt="gold marker icon"> W-L% .500 to .549</p>
+              <p><img src="img/marker-icon-yellow.png" alt="yellow marker icon"> W-L% .450 to .499</p>
+              <p><img src="img/marker-icon-green.png" alt="green icon marker"> W-L% .400 to .449</p>
+              <p><img src="img/marker-icon-blue.png" alt="blue icon marker"> W-L% .350 to .399</p>
+              <p><img src="img/marker-icon-black.png" alt="black icon marker"> W-L% .349 and under</p>
+        </div>
+      </div>
+  
+    <div class="col-sm-9">
+      <button onclick="update(data1)">MLB</button>
+    <button onclick="update(data2)">MiLB</button>
+      <div id="my_dataviz">
+      </div>
+    </div>
+
+  <script>
+//function pointToCircle(feature, LatLng) {
+//var fillColor_Var = "";
+  //    if (Number(feature.properties.Differential > -.300 && Number(feature.properties.Differential <= -.200))) {
+    //    fillColor_Var = "#DE3700";
+      //} else if (Number(feature.properties.Differential > -.200 && Number(feature.properties.Differential <= -.100))) {
+       // fillColor_Var = "#F58B00";
+      //} else if (Number(feature.properties.Differential > -.100 && Number(feature.properties.Differential <= 0))) {
+      //  fillColor_Var = "#ELFF00";
+      //} else if (Number(feature.properties.Differential > 0 && Number(feature.properties.Differential <= .100))) {
+       //   fillColor_Var = "#92E000";
+      //} else if (Number(feature.properties.Differential > .100 && Number(feature.properties.Differential <= .200))) {
+      //    fillColor_Var = "#2AA10"
+      //} else {
+      //  fillColor_Var = "orange";
+      //}
+
+      //var geojsonMarkerOptions = {
+        //radius: 9,
+        //fillColor: "#FFF233",
+        //fillColor: fillColor_Var,
+        //color: "white",
+        //weight: 1,
+    //    opacity: 1,
+     //   fillOpacity: 0.8
+      //};
+      //var circleMarker = L.circleMarker(LatLng, geojsonMarkerOptions);
+      //return circleMarker;
+    //}
+
+//function addPopups(feature, layer) {
+   //this "if statement" used to check where the feature has a properly named "Location"
+  // var newPopUp = "<dl><b>Team:</b> " + feature.properties.Organization + "<dl><b>MLB win%:</b> " + feature.properties.MLBwin + "</dt>" + "</dl>";
+   //if (feature.properties && feature.properties.newPopUp) {
+ //    layer.bindPopup(newPopUp);
+   //}
+
+
+  /* initialize the map. */
+  
+  var map = L.map('mapId').setView([37.8, -96], 4);
+
+  var CartoDB_Voyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+	maxZoom: 20
+	}).addTo(map);
+
+
+  CartoDB_Voyager.addTo(map);
+
+  //DONT DELETE THIS COMMENNT, DO NOT ACTIVATE L.geoJSON(winData).addTo(map);
+ // L.geoJSON(winData, {
+ //   onEachFeature: addPopups
+  //}).addTo(map);
+
+  //var bikesLayerGroup = L.geoJSON(winData, {
+   // onEachFeature: addPopups,
+    //pointToLayer: pointToCircle,
+  //});
+
+  //map.addLayer(bikesLayerGroup);
+  //map.fitBounds(bikesLayerGroup.getBounds());
+
+//MARKER ICONS
+var blueIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-blue.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var goldIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-gold.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var redIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-red.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var greenIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-green.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var orangeIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-orange.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var yellowIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-yellow.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var violetIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-violet.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var greyIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-2x-grey.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+var blackIcon = new L.Icon({
+	iconUrl: 'img/marker-icon-black.png',
+	shadowUrl: 'img/marker-shadow.png',
+	iconSize: [25, 41],
+	iconAnchor: [12, 41],
+	popupAnchor: [1, -34],
+	shadowSize: [41, 41]
+});
+
+
+
+//LAYERS UNDER CONSTRUCTION
+  var MLBlayer = L.layerGroup();
+    var ARI = L.marker([33.445526, -112.066664], {icon: blackIcon}).bindPopup('<b>Team:</b> Arizona Diamondbacks<br><b>Win%:</b> .321').addTo(MLBlayer);
+    var BRA = L.marker([33.890781, -84.468239], {icon: goldIcon}).bindPopup('<b>Team:</b> Atlanta Braves<br><b>Win%:</b> .547').addTo(MLBlayer);
+    var ORI = L.marker([39.284052, -76.621512], {icon: blackIcon}).bindPopup('<b>Team:</b> Baltimore Orioles<br><b>Win%:</b> .321').addTo(MLBlayer);
+    var RES = L.marker([42.346676, -71.097218], {icon: orangeIcon}).bindPopup('<b>Team:</b> Boston Red Sox<br><b>Win%:</b> .568').addTo(MLBlayer);
+    var RED = L.marker([39.097931, -84.508151], {icon: goldIcon}).bindPopup('<b>Team:</b> Cincinnati Reds<br><b>Win%:</b> .512').addTo(MLBlayer);
+    var CUB = L.marker([41.948428, -87.655333], {icon: greenIcon}).bindPopup('<b>Team:</b> Chicago Cubs<br><b>Win%:</b> .438').addTo(MLBlayer);
+    var WHI = L.marker([41.829902, -87.633752], {icon: orangeIcon}).bindPopup('<b>Team:</b> Chicago White Sox<br><b>Win%:</b> .574').addTo(MLBlayer);
+    var GUA = L.marker([39.9249462, -75.17362857], {icon: yellowIcon}).bindPopup('<b>Team:</b> Cleveland Guardians<br><b>Win%:</b> .494').addTo(MLBlayer);
+    var ROX = L.marker([39.755882, -104.994178], {icon: yellowIcon}).bindPopup('<b>Team:</b> Colorado Rockies<br><b>Win%:</b> .460').addTo(MLBlayer);
+    var TIG = L.marker([ 42.338998, -83.04852], {icon: yellowIcon}).bindPopup('<b>Team:</b> Detroit Tigers<br><b>Win%:</b> .475').addTo(MLBlayer);
+    var AST = L.marker([29.757697, -95.354538], {icon: orangeIcon}).bindPopup('<b>Team:</b> Houston Astros<br><b>Win%:</b> .586').addTo(MLBlayer);
+    var ROY = L.marker([39.051672, -94.480314], {icon: yellowIcon}).bindPopup('<b>Team:</b> Kansas City Royals<br><b>Win%:</b> .457').addTo(MLBlayer);
+    var DOD = L.marker([34.073851, -118.239958], {icon: redIcon}).bindPopup('<b>Team:</b> Los Angeles Dodgers<br><b>Win%:</b> .654').addTo(MLBlayer);
+    var ANG = L.marker([33.800308, -117.882732], {icon: yellowIcon}).bindPopup('<b>Team:</b> Los Angeles Angels<br><b>Win%:</b> .475').addTo(MLBlayer);
+    var MAR = L.marker([25.778318, -80.219597], {icon: greenIcon}).bindPopup('<b>Team:</b> Miami Marlins<br><b>Win%:</b> .414').addTo(MLBlayer);
+    var BRE = L.marker([43.027978, -87.97115], {icon: orangeIcon}).bindPopup('<b>Team:</b> Milwaukee Brewers<br><b>Win%:</b> .586').addTo(MLBlayer);
+    var TWI = L.marker([44.981712, -93.27776], {icon: yellowIcon}).bindPopup('<b>Team:</b> Minnesota Twins<br><b>Win%:</b> .451').addTo(MLBlayer);
+    var MET = L.marker([40.757088, -73.845821], {icon: orangeIcon}).bindPopup('<b>Team:</b> New York Mets<br><b>Win%:</b> .586').addTo(MLBlayer);
+    var YAN = L.marker([40.829643, -73.926175], {icon: orangeIcon}).bindPopup('<b>Team:</b> New York Yankees<br><b>Win%:</b> .568').addTo(MLBlayer);
+    var ATH = L.marker([37.752483, -122.19821], {icon: goldIcon}).bindPopup('<b>Team:</b> Oakland Athletics<br><b>Win%:</b> .531').addTo(MLBlayer);
+    var PHI = L.marker([39.906057, -75.166495], {icon: goldIcon}).bindPopup('<b>Team:</b> Philadelphia Phillies<br><b>Win%:</b> .506').addTo(MLBlayer);
+    var PIR = L.marker([40.446855, -80.005666], {icon: blueIcon}).bindPopup('<b>Team:</b> Pittsburgh Pirates<br><b>Win%:</b> .377').addTo(MLBlayer);
+    var PAD = L.marker([32.707656, -117.156904], {icon: yellowIcon}).bindPopup('<b>Team:</b> San Diego Padres<br><b>Win%:</b> .488').addTo(MLBlayer);
+    var GIA = L.marker([37.778595, -122.38927], {icon: redIcon}).bindPopup('<b>Team:</b> San Francisco Giants<br><b>Win%:</b> .660').addTo(MLBlayer);
+    var MAN = L.marker([47.591391, -122.332327], {icon: orangeIcon}).bindPopup('<b>Team:</b> Seattle Mariners<br><b>Win%:</b> .556').addTo(MLBlayer);
+    var CAR = L.marker([38.622619, -90.192821], {icon: orangeIcon}).bindPopup('<b>Team:</b> St. Louis Cardinals<br><b>Win%:</b> .586').addTo(MLBlayer);
+    var RAY = L.marker([27.768225, -82.653392], {icon: redIcon}).bindPopup('<b>Team:</b> Tampa Bay Rays<br><b>Win%:</b> .617').addTo(MLBlayer);
+    var RAN = L.marker([32.75128, -97.082504], {icon: blueIcon}).bindPopup('<b>Team:</b> Texas Rangers<br><b>Win%:</b> .370').addTo(MLBlayer);
+    var BLU = L.marker([43.641438, -79.389353], {icon: orangeIcon}).bindPopup('<b>Team:</b> Toronto Blue Jays<br><b>Win%:</b> .562').addTo(MLBlayer);
+    var NAT = L.marker([38.87301, -77.007433], {icon: greenIcon}).bindPopup('<b>Team:</b> Washington Nationals<br><b>Win%:</b> .401').addTo(MLBlayer);
+
+var AAAlayer = L.layerGroup()
+    var NOR = L.marker([36.843065, -76.279270], {icon: greenIcon}).bindPopup('<b>Team: </b>Norfolk Tides<br><b>Organization:</b> Baltimore Orioles <br><b>Win%:</b> .400').addTo(AAAlayer);
+    var CHA = L.marker([35.228406, -80.848653], {icon: blueIcon}).bindPopup('<b>Team: </b> Charlotte Knights<br><b>Organization:</b> Chicago White Sox <br><b>Win%:</b> .375').addTo(AAAlayer);
+    var SUL = L.marker([29.622358, -95.647303], {icon: orangeIcon}).bindPopup('<b>Team: </b> Sugar Land Skeeters<br><b>Organization:</b> Houston Astros <br><b>Win%:</b> .592').addTo(AAAlayer);
+    var WOR = L.marker([42.257134, -71.800228], {icon: orangeIcon}).bindPopup('<b>Team: </b> Worcester Red Sox<br><b>Organization:</b> Boston Red Sox <br><b>Win%:</b> .578').addTo(AAAlayer);
+    var COL = L.marker([39.968648, -83.011599], {icon: yellowIcon}).bindPopup('<b>Team: </b>Columbus Clippers<br><b>Organization:</b> Cleveland Guardians <br><b>Win%:</b> .475').addTo(AAAlayer);
+    var SLK = L.marker([40.740561, -111.892651], {icon: greenIcon}, {icon: greenIcon}).bindPopup('<b>Team: Salt Lake Bees</b><br><b>Organization:</b> Los Angeles Angels<br><b>Win%:</b> .412').addTo(AAAlayer);
+    var SCR = L.marker([41.360493, -75.683868], {icon: orangeIcon}).bindPopup('<b>Team: </b>Scranton/Wilkes-Barre Rail Riders<br><b>Organization:</b> New York Yanees<br><b>Win%:</b> .581').addTo(AAAlayer);
+    var TOL = L.marker([41.648569, -83.538661], {icon: orangeIcon}).bindPopup('<b>Team: </b>Toledo Mud Hens<br><b>Organization:</b> Detroit Tigers<br><b>Win%:</b> .575').addTo(AAAlayer);
+    var LAV = L.marker([36.153797, -115.334949], {icon: goldIcon}).bindPopup('<b>Team: </b>Las Vegas Aviators<br><b>Organization:</b> Oakland Athletics<br><b>Win%:</b> .517').addTo(AAAlayer);
+    var DUR = L.marker([35.992686, -78.906993], {icon: redIcon}).bindPopup('<b>Team: </b>Durham Bulls<br><b>Organization:</b> Tampa Bay Rays<br><b>Win%:</b> .642').addTo(AAAlayer);
+    var OMA = L.marker([41.152027, -96.106646], {icon: orangeIcon}).bindPopup('<b>Team: </b>Omaha Storm Chasers<br><b>Organization:</b> Kansas City Royals<br><b>Win%:</b> .550').addTo(AAAlayer);
+    var TAC = L.marker([47.238122, -122.497489], {icon: redIcon}).bindPopup('<b>Team: </b>Tacoma Rainiers<br><b>Organization:</b> Seattle Mariners<br><b>Win%:</b> .608').addTo(AAAlayer);
+    var BUF = L.marker([40.203982, -74.760794], {icon: redIcon}).bindPopup('<b>Team: </b>Buffalo Bisons<br><b>Organization:</b> Toronto Blue Jays<br><b>Win%:</b> .607').addTo(AAAlayer);
+    var STP = L.marker([44.950800, -93.03959], {icon: goldIcon}).bindPopup('<b>Team: </b>St. Paul Saints<br><b>Organization:</b> Minnesota Twins<br><b>Win%:</b> .508').addTo(AAAlayer);
+    var RRO = L.marker([30.527728, -97.630063], {icon: goldIcon}).bindPopup('<b>Team: </b>Round Rock Express<br><b>Organization:</b> Texas Rangers<br><b>Win%:</b> .513').addTo(AAAlayer);
+    var GWI = L.marker([34.040503, -83.992258], {icon: orangeIcon}).bindPopup('<b>Team: </b>Gwinnett Stripes<br><b>Organization:</b> Atlanta Braves<br><b>Win%:</b> .571').addTo(AAAlayer);
+    var IOW = L.marker([41.580361, -93.615829], {icon: greenIcon}).bindPopup('<b>Team: </b> Iowa Cubs<br><b>Organization:</b> Chicago Cubs<br><b>Win%:</b> .417').addTo(AAAlayer);
+    var REN = L.marker([39.528849, -119.807738], {icon: orangeIcon}).bindPopup('<b>Team: </b> Reno Aces<br><b>Organization:</b> Arizona Diamondbacks<br><b>Win%:</b> .585').addTo(AAAlayer);
+    var JAC = L.marker([30.324601, -81.643705], {icon: orangeIcon}).bindPopup('<b>Team: </b> Jacksonville Jumbo Shrimp<br><b>Organization:</b> Miami Marlins<br><b>Win%:</b> .575').addTo(AAAlayer);
+    var LOU = L.marker([38.256460, -85.744551], {icon: greenIcon}).bindPopup('<b>Team: </b>Louisville Bats<br><b>Organization:</b> Cincinnati Reds<br><b>Win%:</b> .429').addTo(AAAlayer);
+    var ABQ = L.marker([35.069982, -106.628860], {icon: greenIcon}).bindPopup('<b>Team: </b>Albuquerque Isotopes<br><b>Organization:</b> Colorado Rockies<br><b>Win%:</b> .433').addTo(AAAlayer);
+    var SYR = L.marker([43.079153, -76.165362], {icon: greenIcon}).bindPopup('<b>Team: </b>Syracuse Mets<br><b>Organization:</b> New York Mets<br><b>Win%:</b> .405').addTo(AAAlayer);
+    var NAS = L.marker([36.173348, -86.785204], {icon: goldIcon}).bindPopup('<b>Team: </b> Nashville Sounds<br><b>Organization:</b> Milwaukee Brewers<br><b>Win%:</b> .529').addTo(AAAlayer);
+    var OKC = L.marker([35.465199, -97.507761], {icon: goldIcon}).bindPopup('<b>Team: </b>Oklahoma City Dodgers<br><b>Organization:</b> Los Angeles Dodgers<br><b>Win%:</b> .513').addTo(AAAlayer);
+    var LEH = L.marker([40.625869, -75.452577], {icon: greenIcon}).bindPopup('<b>Team: </b>Lehigh Valley IronPigs<br><b>Organization:</b> Philadelphia Phillies<br><b>Win%:</b> .441').addTo(AAAlayer);
+    var IND = L.marker([39.764744, -86.168674], {icon: yellowIcon}).bindPopup('<b>Team: </b>Indianapolis Baseball Club<br><b>Organization:</b>Pittsburgh Pirates<br><b>Win%:</b> .479').addTo(AAAlayer);
+    var ELP = L.marker([31.759983, -106.496733], {icon: blueIcon}).bindPopup('<b>Team: </b>El Paso Chihuahuas<br><b>Organization:</b> San Diego Padres<br><b>Win%:</b> .383').addTo(AAAlayer);
+    var ROC = L.marker([43.158319, -77.619662], {icon: greenIcon}).bindPopup('<b>Team: </b>Rochester Red Wings<br><b>Organization:</b> Washington Nationals<br><b>Win%:</b> .405').addTo(AAAlayer);
+    var MEM = L.marker([35.142678, -90.049998], {icon: yellowIcon}).bindPopup('<b>Team: </b>Memphis RedBirds<br><b>Organization:</b> St. Louis Cardinals<br><b>Win%:</b> .475').addTo(AAAlayer);
+    var SAC = L.marker([38.580543, -121.513505], {icon: greenIcon}).bindPopup('<b>Team: </b>Sacramento River Cats<br><b>Organization:</b> San Francisco Giants<br><b>Win%:</b> .444').addTo(AAAlayer);
+
+
+//var differentialLayer = L.layerGroup()
+  //  var AZ = L.marker([33.445526, -112.066664], {icon: }).bindPopup('<b>Organization:</b> <br><b>Win% difference:</b> .264').addTo(differentialLayer);
+  //  var AT = L.marker([33.890781, -84.468239], {icon: }).bindPopup('<b>Organization:</b> <br><b>Win% difference:</b> .').addTo(differentialLayer);
+ //   var BA = L.marker([39.284052, -76.621512], {icon: }).bindPopup('<b>Organization:</b> <br><b>Win% difference:</b> .').addTo(differentialLayer);
+  //  var BS = L.marker([42.346676, -71.097218], {icon: }).bindPopup('<b>Organization:</b> <br><b>Win% difference:</b> .').addTo(differentialLayer);
+
+var overlays = {
+		'MLB win%': MLBlayer,
+    'Triple-A win%': AAAlayer,
+    //'Differential': differentialLayer
+	};
+
+	var layerControl = L.control.layers(overlays).addTo(map);
+
+//start of graph stuff
+var data1 = [
+   {group: "ARI", value: 321},
+   {group: "ATL", value: 547},
+   {group: "BAL", value: 321},
+   {group: "BOS", value: 568},
+   {group: "CHC", value: 438},
+   {group: "CWS", value: 574},
+   {group: "CIN", value: 512},
+   {group: "CLE", value: 494},
+   {group: "COL", value: 460},
+   {group: "DET", value: 475},
+   {group: "HOU", value: 586},
+   {group: "KC", value: 457},
+   {group: "LAA", value: 475},
+   {group: "LAD", value: 654},
+   {group: "MIA", value: 414},
+   {group: "MIL", value: 586},
+   {group: "MIN", value: 451},
+   {group: "NYM", value: 586},
+   {group: "NYY", value: 568},
+   {group: "OAK", value: 531},
+   {group: "PHI", value: 506},
+   {group: "PIT", value: 377},
+   {group: "SD", value: 488},
+   {group: "SEA", value: 556},
+   {group: "SF", value: 660},
+   {group: "STL", value: 586},
+   {group: "TB", value: 617},
+   {group: "TEX", value: 370},
+   {group: "TOR", value: 562},
+   {group: "WSH", value: 401},
+];
+
+var data2 = [
+   {group: "ARI", value: 585},
+   {group: "ATL", value: 571},
+   {group: "BAL", value: 400},
+   {group: "BOS", value: 578},
+   {group: "CHC", value: 417},
+   {group: "CWS", value: 375},
+   {group: "CIN", value: 429},
+   {group: "CLE", value: 475},
+   {group: "COL", value: 433},
+   {group: "DET", value: 575},
+   {group: "HOU", value: 433},
+   {group: "KC", value: 550},
+   {group: "LAA", value: 412},
+   {group: "LAD", value: 513},
+   {group: "MIA", value: 575},
+   {group: "MIL", value: 529},
+   {group: "MIN", value: 508},
+   {group: "NYM", value: 405},
+   {group: "NYY", value: 581},
+   {group: "OAK", value: 517},
+   {group: "PHI", value: 441},
+   {group: "PIT", value: 479},
+   {group: "SD", value: 383},
+   {group: "SEA", value: 608},
+   {group: "SF", value: 444},
+   {group: "STL", value: 475},
+   {group: "TB", value: 642},
+   {group: "TEX", value: 513},
+   {group: "TOR", value: 607},
+   {group: "WSH", value: 405},
+
+
+];
+
+// set the dimensions and margins of the graph
+var margin = {top: 100, right: 100, bottom: 100, left: 100},
+    width = 1600 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("#my_dataviz")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+
+// X axis
+var x = d3.scaleBand()
+  .range([ 0, 1500 ])
+  .domain(data1.map(function(d) { return d.group; }))
+  .padding(0.2);
+svg.append("g")
+  .attr("transform", "translate(0," + height + ")")
+  .call(d3.axisBottom(x))
+
+// Add Y axis
+var y = d3.scaleLinear()
+  .domain([0, 650])
+  .range([ height, 0]);
+svg.append("g")
+  .attr("class", "myYaxis")
+  .call(d3.axisLeft(y));
+
+// A function that create / update the plot for a given variable:
+function update(data) {
+
+  var u = svg.selectAll("rect")
+    .data(data)
+
+  u
+    .enter()
+    .append("rect")
+    .merge(u)
+    .transition()
+    .duration(1000)
+      .attr("x", function(d) { return x(d.group); })
+      .attr("y", function(d) { return y(d.value); })
+      .attr("width", x.bandwidth())
+      .attr("height", function(d) { return height - y(d.value); })
+      .attr("fill", "#69b3a2")
+}
+
+// Initialize the plot with the first dataset
+update(data1)
+
+  </script>
+</body>
+</html>
