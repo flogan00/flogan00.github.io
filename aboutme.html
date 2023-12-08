@@ -7,47 +7,79 @@
         <meta name="author" content="" />
         <title>About me</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../images/research.png" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="styles.css" rel="stylesheet" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <!-- Page content-->
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-8">
-                    <!-- Post content-->
-                    <article>
-                        <!-- Post header-->
-                        <header class="mb-4" style="background-color: #34A853">
-                            <!-- Post title-->
-                            <h1 class="fw-bolder mb-1" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: white;">About me</h1>
-                        </header>
-                        <section class="mb-5">
-                            <p class="fs-5 mb-4"><b>My background</b></p>
-                            <ul>
-                                <li>B.S. in Geography, University of New Mexico</li>
-                                <li>B.A. in Classical Studies (Ancient Greek) University of New Mexico</li>
-                                <li>M.S. in Sport Administration University of Northern Colorado</li>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">Learn more:</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Home</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="aboutme.html">About me</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="research.html">Research</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="webapps.html">Web applications</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="contact.html">Contacts</a>
+                    <!--<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a> -->
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="#!">češtinu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#!">Twitter</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://orcid.org/0000-0003-4298-0468">OrcID</a></li>
+                                <li class="nav-item dropdown">
+                                    <!-- <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#!">Action</a>
+                                        <a class="dropdown-item" href="#!">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                    </div> -->
+                                </li>
                             </ul>
-                            <br>
-                            <p class="fs-5 mb-4"><b>Biography</b></p>
-                            <p>I am a graduate student at the University of Northern Colorado (UNCO) studying Sport Administration in the School of Sport and Exercise Science. I am a graduate assistant at the Marcus Garvey Cultural Center, and also work for different staff and faculty as a research assistant from time to time. In 2023, I was voted "Most likely to win the Hunger Games" by the Garvey staff, so take that as you will.
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <section class="mb-5">
+                        <h1 class="mt-4">About me</h1>
+                        <p class="fs-5 mb-4"><b>My background</b></p>
+                        <ul>
+                            <li>B.S. in Geography, University of New Mexico</li>
+                            <li>B.A. in Classical Studies (Ancient Greek) University of New Mexico</li>
+                            <li>M.S. in Sport Administration University of Northern Colorado</li>
+                        </ul>
+                        <br>
+                        <p class="fs-5 mb-4"><b>Biography</b></p>
+                        <p>I am a graduate student at the University of Northern Colorado (UNCO) studying Sport Administration in the School of Sport and Exercise Science. I am a graduate assistant at the Marcus Garvey Cultural Center, and also work for different staff and faculty as a research assistant from time to time. In 2023, I was voted "Most likely to win the Hunger Games" by the Garvey staff, so take that as you will.
 
-                            <p>In life, I want to be an educator and researcher, and work as a consultant to help municipalities implement sport development projects while preserving residential communities and local businesses that might be negatively impacted by the project.</p>
-                                
-                                </p>
-                            <br>
-                            <p class="fs-5 mb-4"><b>Extracurricular interests</b></p>
-                            <p>I'm a really big sports fan, of course. I follow baseball, ice hockey, and motorsports, mostly Formula 1, World Rally Championship, and World Edurance Championship.</p>
-                           
-                            <p>In my spare time, I love to hike, play video games, read, and work on my beloved car. I also study different languages. I speak, read, and write Czech at an intermediate level, and am beginning my Finnish journey :)
+                        <p>In life, I want to be an educator and researcher, and work as a consultant to help municipalities implement sport development projects while preserving residential communities and local businesses that might be negatively impacted by the project.</p>
+                            
                             </p>
-                            <p>My greatest fear is being electrocuted by my car battery and my greatest dream is to be able to pass on my best experiences in sports to everyone I can.</p>
-                        </section>
-                    </article>
-                </div>    
+                        <br>
+                        <p class="fs-5 mb-4"><b>Extracurricular interests</b></p>
+                        <p>I'm a really big sports fan, of course. I follow baseball, ice hockey, and motorsports, mostly Formula 1, World Rally Championship, and World Edurance Championship.</p>
+                       
+                        <p>In my spare time, I love to hike, play video games, read, and work on my beloved car. I also study different languages. I speak, read, and write Czech at an intermediate level, and am beginning my Finnish journey :)
+                        </p>
+                        <p>My greatest fear is being electrocuted by my car battery and my greatest dream is to be able to pass on my best experiences in sports to everyone I can.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>
