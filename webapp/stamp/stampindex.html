@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>The Stadium/Arena Monitoring Project (StAMP)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Scripts -->
+
+  <!-- Leaflet.js Library (downloaded) -->
+  <!-- <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script> -->
+  <script src="leaflet.js"></script>
+
+  <!-- Main .js for building leaflet map and interactivity 
+  <script src="leafletContainerData.js"></script>-->
+
+  <!-- Turf (turfjs.org) -->
+  <!-- <script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script> -->
+  <script src="turf.min.js"></script>
+
+  <!-- D3.js Library (downloaded) -->
+  <!-- <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script> -->
+  <script type="text/javascript" src="d3.v4.min.js"></script>
+
+  <!-- jQuery.js library (downloaded) -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="jQuery.v3.5.1.min.js"></script>
+  
+  <!-- Bootstrap (for Modal and other website features) (downloaded) -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <script src="bootstrap.min.js"></script>
+
+  <!-- Easy Print, allows for map image export Source: https://github.com/rowanwins/leaflet-easyPrint FRANKIE NOTE: not sure if we need this
+  <script src="bundle.js"></script>-->
+
+  <!-- Leaflet TextPath Plugin -->
+  <script src="leaflet.textpath.js"></script>
+
+  <!-- Stylesheets -->
+
+  <!-- Leaflet CSS (downloaded) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/> -->
+  <link rel="stylesheet" href="leaflet1.css.css">
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" href="leaflet2.css"/>
+  <!-- Bootstrap CSS (downloaded) -->
+  <link rel="stylesheet" href="bootstrap1.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+<!-- Style for the tables-->
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 750px;
+			width: 1400px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+    </style>
+
+</head>
+
+<body>
+
+  <div class="container col-sm-9">
+    <br>
+  <h1><b>The Stadium/Arena Monitoring Project (StAMP)</b></h1>
+  </div>
+
+    <!-- Create Leaflet map container -->
+    <div class= "col-sm-9">
+      <div id="map"></div>
+
+    </div>
+
+<!-- Set up Button modals -->
+<!-- Source: https://www.w3schools.com/bootstrap/bootstrap_modal.asp -->
+
+    <div class="container col-sm-3">
+      <div class="row">
+          <!-- Look at another stadium Modal -->
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Look at another stadium</button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><b>Look at another map</b></h4>
+                  </div>
+                  <div class="modal-body">
+                    <h4><b>Check out more stadium maps like these</b></h4>
+                    <p>More stadium maps like this one will be coming soon. When they are ready for use, they will be listed here. If you have a specific stadium, arena, other sports facility, or even a 
+                      proposed facility that you would like to see, please email me at franciscologan00@gmail.com.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- About the project modal -->
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myAboutModal">About</button>
+            <!-- Modal -->
+            <div class="modal fade" id="myAboutModal" role="dialog">
+              <div class="modal-dialog"> 
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><b>About</b></h4>
+                  </div>
+                  <div class="modal-body">
+                    <h4><b>Why was this application made?</h4></b></h4>
+                    <p>In April 2024, I (Frankie), finished my master's thesis, "A geospatial analysis of patterns in neighborhood characteristics 
+                      and United States professional sports stadium relocations from 1992-2022," with the help of my committe, Dr. Alan Morse and Dr. Chelsie Romulo. While I was doing research, I kept wondering
+                      why we keep subsidizing and building professional sports stadiums with little scrutiny, considering how many scholarly articles say that we should be more critical of those stadium projects.
+                      I believe that some of the discrepancy is because many research papers are paywalled or difficult to access for people not affiliated with a university.
+                      
+                      <br><br>
+                      As I started transitioning into my 
+                      doctoral studies, I began creating this application as a potential solution to creating more research access for those outside of academia. As you play with this application, please email me
+                      at franciscologan00@gmail.com if you have any questions, concerns, or suggestions. <b>Your feedback is how this tool can improve!</b>
+                      Here are the 
+                      objectives of this project:
+                      <ol>
+                        <li>To create free and unbiased access to information about sports facilities and their potential impacts on communities.</li>
+                        <li>To push for more open-access research into sports facilities from journalists, scholars, and citizens.</li>
+                        <li>To encourage sport industry practitioners to increase the amount of community agency and involvement that goes into facility construction.</li>
+                      </ol>
+                    </p>
+                    <h4><b>The team:</h4></b></h4>
+                    <p><a href="http://flogan00.github.io" target="_blank">Francisco Logan</a>, MS Student (<a href="https://flogan00.github.io/contact.html" target="_blank">Contact</a>)</p>
+                    <p><a href="https://www.unco.edu/nhs/sport-exercise-science/faculty-staff/alan-morse.aspx" target="_blank">Dr. Alan Morse</a> (thesis committee chair)</p>
+                    <p><a href="https://www.unco.edu/hss/geography-gis-sustainability/about/faculty/romulo-chelsie.aspx" target="_blank">Dr. Chelsie Romulo </a>(thesis committee member)</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Source modal-->
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#mySourceModal">Sources</button>
+            <!-- Modal -->
+            <div class="modal fade" id="mySourceModal" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><b>Data sources</b></h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><u>Data Sources:</u></p>
+                    <ul>
+                      <li>The race and rent data were sourced from the United States Census Bureau at <a href="https://data.census.gov/" target="_blank">data.census.gov</a></li>
+                      <li>The census tract shapefiles were copied from the <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.2020.html#list-tab-790442341" target="_blank"> 2020 TIGER/Line Shapefiles</a> project.</li>
+                    </ul>
+                    <p><u>Code Examples Referenced:</u></p>
+                    <ul>
+                      <li>This app was built primarily using the <a href="https://leafletjs.com/" target="_blank">Leaflet.js</a> and <a href="https://d3js.org/" target="_blank">D3.js</a> JavaScript libraries.</li>
+                      <li>The About button is based on this <a href="https://www.w3schools.com/bootstrap/bootstrap_modal.asp" target="_blank">Bootstrap Modal Reference</a></li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+ 
+            <b><h3>About the project</h3></b> 
+            The professional sport industry is one of the largest in the United States. With new leagues emerging existing leagues expanding and relocating teams, new professional sports facilities 
+            are constantly being built. As the sport industry rapidly tries to meet consumer demands, many of us are left wondering about the consequences of these new sports facilities. When the Oakland 
+            Athletics move to Las Vegas, how will it increase demands on limited desert resources, like water? If the Chicago Bears leave Soldier Field, where will they move, and will local residents be priced out 
+            of their neighborhoods because of it? When the Arizona Coyotes move to Salt Lake City, how much will they help the economy? Essentially, what impact do these stadiums have on communities?
+            <br><br>
+            We already have a wealth of information out there to help us answer those questions. Unfortunately, accessing that information can  be difficult, as much of it is paywalled or was not intended to be 
+            a tool for community advocacy. This project hopes to make that information more accessible so as many people as possible can learn more about this growing trend and form opinions for themselves.
+            <br><br>
+            Read on to learn how to use the map to the left, and keep scrolling down to find open-access articles about the issue and learn how you can get involved with sports stadium decisions in your community!
+            <br>
+            <br>
+            <h4><b>How to use the map</b></h4>
+            <ul>
+              <li>Turn layers on and off by hovering the <img src="layers.png" alt="layers"> dropdown menu to see how Brooklyn has changed from before Barclays Center was built to after.</li>
+              <li>Click on the census tracts for housing and demoraphic info.</li>
+              <li>Refresh the page to reset the map.</li>
+              <li>Scroll down to watch a timelapse of the area and learn more about sports stadium development.</li>
+            </ul>
+      </div>
+    </div>
+
+    <div class="container col-sm-9">
+      <div class="row">
+        <br>
+        <br>
+        <h3><b>Why Barclays Center?</b></h3>
+        <p>While this project will include numerous different stadiums and arenas, we chose Barclays Center as our first arena to profile here. Why is that?
+          <ul>
+            <li><b>Timing:</b> Barclays Center opened in 2012, making it 12 years old as of 2024. It is in the sweet spot of having accessible Census Bureau data of the area before the stadium and after while not being overly impacted by other factors, like the 2008 financial crisis or the COVID-19 pandemic.</li>
+            <li><b>Documentation:</b> Before and during the arena's construction, it was heavily covered by local journalists, activists, and community members, with articles still available online.</li>
+            <li><b>Generalizability:</b> The construction of Barclays Center is generalizable to other stadium situations because it featured many common and unique themes of sports stadium relocation: it's a publicly-subsidized stadium, it was constructed in a metropolitan area, it used <a href="https://www.law.cornell.edu/wex/eminent_domain" target="_blank">eminent domain</a> to clear land, there were many mixed emotions from community members who were both for and against the stadium.</li>
+          </ul>
+        <br>
+        To read more about Barclays Center, check out these links:
+        <ul>
+          <li><a href="https://www.britannica.com/video/180752/Barclays-Center-video-construction-sports-Brooklyn-New" target="_blank">Watch Barcalys Center be constructed</a></li>
+          <li><a href="https://nymag.com/news/intelligencer/topic/55684/" target="_blank">A timeline of protests, lawsuits, and stops-and-starts on construction.</a></li>
+          <li><a href="https://www.nytimes.com/2010/04/30/nyregion/30freddys.html" target="_blank">The New York Times discusses the eminent domain used to clear residential areas and small businesses for Barclays Center</a></li>
+          <li><a href="https://www.sbnation.com/nba/2022/12/8/23496877/barclays-center-worst-arena-in-america-sports-brookly-nets" target="_blank">A critical retrospective on Barclays Center from SBNation</a></li>
+        </ul>
+        </p>
+      </div>
+    </div>
+
+<div class="container col-sm-11">
+  <div class="row">
+    <br>
+    <br>
+    <h3><b>What will a new sports stadium do for the economy?</b></h3>
+    <table>
+      <tr>
+        <th>Summary</th>
+        <th>Source type</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <td>A short video breaking down the history and statistics of publicly subsidized sports stadiums with a focus on how much taxpayers spend.</td>
+        <td>YouTube video by Vox</td>
+        <td><a href="https://www.youtube.com/watch?v=e22yH5hUQ_A" target="_blank">Why do taxpayers pay billions for football stadiums</a></td>
+      </tr>
+      <tr>
+        <td>Gives a general overview about if and how sports stadiums help the economy. Published in 2001.</td>
+        <td>Article from the Federal Reserve Bank of St. Louis</td>
+        <td><a href="https://www.stlouisfed.org/publications/regional-economist/april-2001/should-cities-pay-for-sports-facilities" target="_blank">Should Cities Pay for Sports Facilities</a></td>
+      </tr>
+      <tr>
+        <td>Talks about why sport organizations ask for subsidies, what the legal process is, and what citizens can do to take action. Published in 1997.</td>
+        <td>Commentary</td>
+        <td><a href="https://www.brookings.edu/articles/sports-jobs-taxes-are-new-stadiums-worth-the-cost/" target="_blank">Sports, Jobs, & Taxes: Are New Stadiums Worth the Cost?</a></td>
+      </tr>
+      <tr>
+        <td>Reviews some facts about subsidizing sports stadiums and how they impact the economy. Published in 2023.</td>
+        <td>Website article</td>
+        <td><a href="" target="_blank">Stadiums as Public Investments</a></td>
+      </tr>
+      <!-- <tr>
+        <td>I'll write a fact here :]</td>
+        <td>Stanford News Review</td>
+        <td><a href="" target="_blank">Sports stadiums don't spur economic growth, Stanford expert says</a></td>
+      </tr> -->
+      <tr>
+        <td>A resource guide by the Minnesota Legislative Reference Library listing more readings about sports stadiums, economics, and public subsidy. Published in 2022.</td>
+        <td>Library guide</td>
+        <td><a href="https://www.lrl.mn.gov/guides/guides?issue=sports" target="_blank">Financing Professional Sports Facilities</a></td>
+      </tr>
+      <tr>
+        <td>Sports economics professor, Brad Humphreys, gives a talk about the pros and cons of subsidizing sports stadiums, including history, definitions, and statistics. Published in 2019.</td>
+        <td>YouTube video from Johns Hopkins University</td>
+        <td><a href="https://www.youtube.com/watch?v=NE8ED5E78o8&list=WL&index=1" target="_blank">Caught Stealing? The pros and cons of subsidies for professional sports facilities</a></td>
+      </tr>
+      <tr>
+        <td>Presents statistics about how much money and jobs publicly subsidized sports stadiums create. Published in .</td>
+        <td>Berkley Economic Review</td>
+        <td><a href="https://econreview.studentorg.berkeley.edu/the-economics-of-sports-stadiums-does-public-financing-of-sports-stadiums-create-local-economic-growth-or-just-help-billionaires-improve-their-profit-margin/" target="_blank">The Economics of Sports Stadiums: Does public financing of sports stadiums create local economic growth, or just help billionaires improve their profit margin?</a></td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+<div class="container col-sm-11">
+  <div class="row">
+    <br>
+    <br>
+    <h3><b>What will happen to my neighborhood with a new sports stadium?</b></h3>
+    <table>
+      <tr>
+        <th>Summary</th>
+        <th>Source type</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <td>Discusses how the stadiums built for the Olympic Games in Atlanta affected the local communities. Published in 1999.</td>
+        <td>Academic article</td>
+        <td><a href="https://doi.org/10.1093/cdj/34.2.151" target="_blank">Neighborhood impacts of Atlanta's Olympic Games</a></td>
+      </tr>
+      <tr>
+        <td>Residents and activists who once pushed back against Barclays Center discuss what the stadium has become since it has been ten years since its creation. Published in 2012.</td>
+        <td>News article - New York  Times</td>
+        <td><a href="https://www.nytimes.com/2012/11/26/nyregion/exhausted-from-an-angry-and-losing-battle-against-barclays-center.html" target="_blank">Opponents of Atlantic Yards Are Exhausted by a Long, Losing Battle</a></td>
+      </tr>
+      <tr>
+        <td>Discusses how professional sport teams have paid for improvements to the neighborhoods that they move into. Published in 2022.</td>
+        <td>News article - Investigative Post</td>
+        <td><a href="https://www.investigativepost.org/2022/01/25/how-a-stadium-can-benefit-the-community/" target="_blank">How a stadium can benefit the community</a></td>
+      </tr>
+      <tr>
+        <td>Reviews different ways that sports stadiums are keeping the environment in mind and trying to lower their environmental footprint.</td>
+        <td>Blog Post - The Sustainability Report</td>
+        <td><a href="https://sustainabilityreport.com/2019/09/26/can-sports-venues-have-a-positive-impact-on-the-natural-environment/" target="_blank">Can sports venues have a positive impact on the natural environment?</a></td>
+      </tr>
+      <tr>
+        <td>Breaks down what the economic and real estate data mean for local community members.</td>
+        <td>News article - Pratt Institute’s Graduate Center for Planning and the Environment</td>
+        <td><a href="https://www.multiplecities.org/home/2018/4/13/the-housing-impacts-of-sports-stadiums" target="_blank">The Housing Impacts of Sports Stadiums</a></td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+<div class="container col-sm-7">
+  <div class="row">
+    <br>
+    <br>
+    <!-- <u><h3>Satellite timelapse</h3></u> -->
+    <video width="960" height="540" controls>
+      <source src="timelineimages/timeline.mp4" type="video/mp4">
+      </video>
+  </div>
+</div>
+  
+<div class="container col-sm-3">
+  <div class="row">
+    <br>
+    <br>
+    <b><h3>Satellite timelapse</h3></b>
+    To the left is a brief satellite imagery timelapse of Barclays Center. It ranges from 2005, which is well before the stadium's construction, which was completed in 2012, to 2019.
+    <br>
+    <br>
+    Note the changes in space usage, what is empty before the stadium and what is occupied. If you might experience a sports stadium moving into your neighborhood, consider what space is occupied and what is unoccupied. How will land be cleared? Do you think it is a better use of space than what is already there?
+  </div>
+</div>
+
+<div class="container col-sm-11">
+  <div class="row">
+    <br>
+    <br>
+    <h3><b>What do communities have to say about the sports stadiums built in their neighborhoods?</b></h3>
+    <table>
+      <tr>
+        <th>Summary</th>
+        <th>Source</th>
+        <th>Link</th>
+      </tr>
+      <tr>
+        <td>Jessica Xiao talks about how Capital One Arena and COVID-19 impacted Washington D.C.'s Chinatown</td>
+        <td>News article - AsAmNews</td>
+        <td><a href="https://asamnews.com/2023/02/01/lessons-learned-washington-dc-chinatown-philadelphia-chinatown-redevelopment/" target="_blank">Incredibly shrinking DC Chinatown struggles to survive</a></td>
+      </tr>
+      <tr>
+        <td>Community members share their thoughts about a new proposed stadium.</td>
+        <td>News article - Philly Voice</td>
+        <td><a href="https://www.phillyvoice.com/76er-stadium-chinatown-washington-dc-philadelphia-capitol-one-arena/" target="_blank">With 76ers new stadium, is Philly's Chinatown destined for the same fate as Washington, D.C. neighborhood?</td>
+      </tr>
+      <tr>
+        <td>A news article describing a press conference by community leaders answering questions about a potential stadium being built in their neighborhood</td>
+        <td>News article - KRQE News</td>
+        <td><a href="https://www.krqe.com/news/albuquerque-metro/barelas-community-leaders-hold-press-conference-ahead-of-united-stadium-bond-vote/" target="_blank">Barelas community leaders hold press conference ahead of United Stadium bond vote</a></td>
+      </tr>
+      <tr>
+        <td>Community members share their thoughts about the proposed site of a new minor league soccer stadium in their neighborhood.</td>
+        <td>News article - KRQE News</td>
+        <td><a href="https://www.krqe.com/news/albuquerque-metro/neighbors-concerned-over-proposed-nm-united-stadium-locations/" target="_blank">Neighbors concerned over proposed NM United stadium locations</a></td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+
+<div class="container col-sm-9">
+  <div class="row">
+    <br>
+    <br>
+    <h3><b>What can I do to make my thoughts heard?</b></h3>
+    <h4>
+      <ul>
+        <li><a href="https://www.house.gov/representatives/find-your-representative" target="_blank">Call your representative</a></li>
+        <li>Share your thoughts and ideas with your community association</li>
+        <li><a href="https://www.usa.gov/voter-registration" target="_blank">Register to vote</a></li>
+        <li><a href="https://www.usa.gov/libraries" target="_blank">Find more articles and books to learn more at your local library</a></li>
+        <li><a href="https://www.energy.gov/justice/community-benefit-agreement-cba-toolkit" target="_blank">Learn about how to create a Community Benefits Agreement (CBA)</a></li>
+      </ul>
+    </h4>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  </div>
+</div>
+
+<script>
+
+  //create point for barclays center
+  const stadium = L.layerGroup();
+  const barclays = L.marker([40.68259867589981, -73.97528934757588]).bindPopup('Barclays Center').addTo(stadium);
+  
+  //add census tracts ALL DONE
+  const tracts = L.layerGroup();
+  const tract1 = L.polygon([
+            [40.686681, -73.979362],
+              [40.686712, -73.979056],
+                [40.686819, -73.978207],
+                [40.686918, -73.977361],
+            [40.686993, -73.976545],
+            [40.687024, -73.976205],
+            [40.687086, -73.975589],
+            [40.687190, -73.974615],
+            [40.686309, -73.974440],
+            [40.685513, -73.974280],
+            [40.683755, -73.973922],
+            [40.683060, -73.9737791],
+            [40.683278, -73.974826],
+            [40.683504, -73.975928],
+            [40.683644, -73.976317],
+            [40.684052, -73.977457],
+            [40.684863, -73.978026],
+            [40.685195, -73.978273],
+            [40.686284, -73.979087]]).bindPopup('<b>Census tract 35</b><br>Median rent: $955 <br>% of white residents: 12.2% <br> % of non-white residents: 87.8%<br> Number of housing units: 889').addTo(tracts);
+  const tract2 = L.polygon([
+            [40.679578, -73.978320],
+            [40.679679, -73.978248],
+            [40.680216, -73.977885],
+            [40.680312, -73.977814],
+            [40.680852, -73.977454],
+            [40.681486, -73.977023],
+            [40.682119, -73.976596],
+            [40.682508, -73.976316],
+            [40.682871, -73.976501],
+            [40.683250, -73.976528],
+            [40.683644, -73.976317],
+            [40.683504, -73.975928],
+            [40.683278, -73.974826],
+            [40.683060, -73.973779],
+            [40.682280, -73.973951],
+            [40.681505, -73.974226],
+            [40.680732, -73.974503],
+            [40.680265, -73.97469],
+            [40.679955, -73.974904],
+            [40.679876, -73.974958],
+            [40.679333, -73.975320],
+            [40.678699, -73.975748],
+            [40.678064, -73.976179],
+            [40.679046, -73.978675],
+            [40.679578, -73.978320]]).bindPopup('<b>Census tract 129.02</b><br>Median rent: $1,864 <br>% of white residents: 60.3% <br> % of non-white residents: 39.7% <br> Number of housing units: 1040').addTo(tracts);
+  const tract3 = L.polygon([
+            [40.677416, -73.983041],
+            [40.677746, -73.982816],
+            [40.678050, -73.982610],
+            [40.678685, -73.982181],
+            [40.679316, -73.981754],
+            [40.679952, -73.981324],
+            [40.679286, -73.979559],
+            [40.679046, -73.978675],
+            [40.678064, -73.976179],
+            [40.677430, -73.976615],
+            [40.676707, -73.977102],
+            [40.676072, -73.977530],
+            [40.675574, -73.977867],
+            [40.675438, -73.977959],
+            [40.6755, -73.978121],
+            [40.676288, -73.980139],
+            [40.676358, -73.980322],
+            [40.676412, -73.980459],
+            [40.676487, -73.980654],
+            [40.676532, -73.980772],
+            [40.677354, -73.98288],
+            [40.677416, -73.983041]]).bindPopup('<b>Census tract 131</b><br>Median rent: $1,869 <br>% of white residents: 56.5% <br> % of non-white residents: 43.5% <br> Number of housing units: 2051').addTo(tracts);
+  const tract4 = L.polygon([
+            [40.675574, -73.977867],
+            [40.676072, -73.977530],
+            [40.676707, -73.977102],
+            [40.677430, -73.976615],
+            [40.678064, -73.976179],
+            [40.677078, -73.973686],
+            [40.676412, -73.971903],
+            [40.675905, -73.969498],
+            [40.675359, -73.969692],
+            [40.675283, -73.969555],
+            [40.675184, -73.969413],
+            [40.675075, -73.969282],
+            [40.674963, -73.969173],
+            [40.674852, -73.969084],
+            [40.674712, -73.968998],
+            [40.674548, -73.968905],
+            [40.674385, -73.968834],
+            [40.674202, -73.9687773],
+            [40.674025, -73.968740],
+            [40.6739279, -73.968730],
+            [40.673283, -73.9687969],
+            [40.673069, -73.968857],
+            [40.672937, -73.968924],
+            [40.672742, -73.969246],
+            [40.672674, -73.969346],
+            [40.67265, -73.969662],
+            [40.67268, -73.970039],
+            [40.672616, -73.970409],
+            [40.672730, -73.9708589],
+            [40.672744, -73.971024],
+            [40.673318, -73.972515],
+            [40.673378, -73.972673],
+            [40.673487, -73.972954],
+            [40.673555, -73.973128],
+            [40.673636, -73.973337],
+            [40.674467, -73.975466],
+            [40.674576, -73.975749],
+            [40.675086, -73.9770559],
+            [40.675438, -73.977959],
+            [40.675574, -73.977867]]).bindPopup('<b>Census tract 159</b><br>Median rent: $1,912 <br>% of white residents: 68.3%<br> % of non-white residents: 31.7%<br> Number of housing units: 2850').addTo(tracts);
+  const tract5 = L.polygon([
+            [40.678699, -73.975748],
+            [40.679333, -73.975320],
+            [40.679876, -73.9749580],
+            [40.679955, -73.974904],
+            [40.680265, -73.974691],
+            [40.680732, -73.974503],
+            [40.681505, -73.974226],
+            [40.682280, -73.973951],
+            [40.6830605, -73.973779],
+            [40.682862, -73.972773],
+            [40.682767, -73.972324],
+            [40.682645, -73.971741],
+            [40.682414, -73.970640],
+            [40.681619, -73.970851],
+            [40.68085, -73.971119],
+            [40.680082, -73.971394],
+            [40.679206, -73.971710],
+            [40.678328, -73.972026],
+            [40.677447, -73.972346],
+            [40.677161, -73.972444],
+            [40.676412, -73.971903],
+            [40.677078, -73.973686],
+            [40.678064, -73.976179],
+            [40.678699, -73.975748]]).bindPopup('<b>Census tract 161</b><br>Median rent: $1,920<br>% of white residents: 60.3%<br> % of non-white residents: 39.7%<br> Number of housing units: 1497').addTo(tracts);
+  const tract6 = L.polygon([
+            [40.680586, -73.980893],
+            [40.681221, -73.980463],
+            [40.681854, -73.980034],
+            [40.682488, -73.9796049],
+            [40.683124, -73.979164],
+            [40.683759, -73.978742],
+            [40.684394, -73.9783369],
+            [40.684863, -73.978026],
+            [40.684052, -73.977457],
+            [40.683644, -73.9763179],
+            [40.683250, -73.976528],
+            [40.682871, -73.976501],
+            [40.682508, -73.976316],
+            [40.682119, -73.976596],
+            [40.681486, -73.977023],
+            [40.680852, -73.977454],
+            [40.680312, -73.977814],
+            [40.680216, -73.977885],
+            [40.679679, -73.978248],
+            [40.6795789, -73.978320],
+            [40.6790469, -73.978675],
+            [40.6792869, -73.979559],
+            [40.679952, -73.981324],
+            [40.680586, -73.980893]]).bindPopup('<b>Census tract 179</b><br>Median rent: $1,155<br>% of white residents: 23.8%<br> % of non-white residents: 76.2%<br> Number of housing units: 1593').addTo(tracts);
+
+
+//add housing unit data AFTER the move
+const units = L.layerGroup();
+  const unit1 = L.polygon([
+            [40.686681, -73.979362],
+            [40.686712, -73.979056],
+            [40.686819, -73.978207],
+            [40.686918, -73.977361],
+            [40.686993, -73.976545],
+            [40.687024, -73.976205],
+            [40.687086, -73.975589],
+            [40.687190, -73.974615],
+            [40.686309, -73.974440],
+            [40.685513, -73.974280],
+            [40.683755, -73.973922],
+            [40.683060, -73.9737791],
+            [40.683278, -73.974826],
+            [40.683504, -73.975928],
+            [40.683644, -73.976317],
+            [40.684052, -73.977457],
+            [40.684863, -73.978026],
+            [40.685195, -73.978273],
+            [40.686284, -73.979087]], {color:'#FEB24C'}).bindPopup('<b>Census tract 35</b><br>Number of housing units in 2013: 889 <br> Number of housing units in 2010: 870').addTo(units);
+  const units2 = L.polygon([
+            [40.679578, -73.978320],
+            [40.679679, -73.978248],
+            [40.680216, -73.977885],
+            [40.680312, -73.977814],
+            [40.680852, -73.977454],
+            [40.681486, -73.977023],
+            [40.682119, -73.976596],
+            [40.682508, -73.976316],
+            [40.682871, -73.976501],
+            [40.683250, -73.976528],
+            [40.683644, -73.976317],
+            [40.683504, -73.975928],
+            [40.683278, -73.974826],
+            [40.683060, -73.973779],
+            [40.682280, -73.973951],
+            [40.681505, -73.974226],
+            [40.680732, -73.974503],
+            [40.680265, -73.97469],
+            [40.679955, -73.974904],
+            [40.679876, -73.974958],
+            [40.679333, -73.975320],
+            [40.678699, -73.975748],
+            [40.678064, -73.976179],
+            [40.679046, -73.978675],
+            [40.679578, -73.978320]], {color:'#FD8D3C'}).bindPopup('<b>Census tract 129.02</b><br> Number of housing units in 2013: 1040 <br> Number of housing units in 2010: 1166').addTo(units);
+  const units3 = L.polygon([
+            [40.677416, -73.983041],
+            [40.677746, -73.982816],
+            [40.678050, -73.982610],
+            [40.678685, -73.982181],
+            [40.679316, -73.981754],
+            [40.679952, -73.981324],
+            [40.679286, -73.979559],
+            [40.679046, -73.978675],
+            [40.678064, -73.976179],
+            [40.677430, -73.976615],
+            [40.676707, -73.977102],
+            [40.676072, -73.977530],
+            [40.675574, -73.977867],
+            [40.675438, -73.977959],
+            [40.6755, -73.978121],
+            [40.676288, -73.980139],
+            [40.676358, -73.980322],
+            [40.676412, -73.980459],
+            [40.676487, -73.980654],
+            [40.676532, -73.980772],
+            [40.677354, -73.98288],
+            [40.677416, -73.983041]], {color:'#E31A1C'}).bindPopup('<b>Census tract 131</b><br> Number of housing units in 2013: 2051<br> Number of housing units in 2010: 2019').addTo(units);
+  const units4 = L.polygon([
+            [40.675574, -73.977867],
+            [40.676072, -73.977530],
+            [40.676707, -73.977102],
+            [40.677430, -73.976615],
+            [40.678064, -73.976179],
+            [40.677078, -73.973686],
+            [40.676412, -73.971903],
+            [40.675905, -73.969498],
+            [40.675359, -73.969692],
+            [40.675283, -73.969555],
+            [40.675184, -73.969413],
+            [40.675075, -73.969282],
+            [40.674963, -73.969173],
+            [40.674852, -73.969084],
+            [40.674712, -73.968998],
+            [40.674548, -73.968905],
+            [40.674385, -73.968834],
+            [40.674202, -73.9687773],
+            [40.674025, -73.968740],
+            [40.6739279, -73.968730],
+            [40.673283, -73.9687969],
+            [40.673069, -73.968857],
+            [40.672937, -73.968924],
+            [40.672742, -73.969246],
+            [40.672674, -73.969346],
+            [40.67265, -73.969662],
+            [40.67268, -73.970039],
+            [40.672616, -73.970409],
+            [40.672730, -73.9708589],
+            [40.672744, -73.971024],
+            [40.673318, -73.972515],
+            [40.673378, -73.972673],
+            [40.673487, -73.972954],
+            [40.673555, -73.973128],
+            [40.673636, -73.973337],
+            [40.674467, -73.975466],
+            [40.674576, -73.975749],
+            [40.675086, -73.9770559],
+            [40.675438, -73.977959],
+            [40.675574, -73.977867]], {color:'#BD0026'}).bindPopup('<b>Census tract 159</b><br>Number of housing units in 2013: 2850 <br> Number of housing units in 2010: 2930').addTo(units);
+  const units5 = L.polygon([
+            [40.678699, -73.975748],
+            [40.679333, -73.975320],
+            [40.679876, -73.9749580],
+            [40.679955, -73.974904],
+            [40.680265, -73.974691],
+            [40.680732, -73.974503],
+            [40.681505, -73.974226],
+            [40.682280, -73.973951],
+            [40.6830605, -73.973779],
+            [40.682862, -73.972773],
+            [40.682767, -73.972324],
+            [40.682645, -73.971741],
+            [40.682414, -73.970640],
+            [40.681619, -73.970851],
+            [40.68085, -73.971119],
+            [40.680082, -73.971394],
+            [40.679206, -73.971710],
+            [40.678328, -73.972026],
+            [40.677447, -73.972346],
+            [40.677161, -73.972444],
+            [40.676412, -73.971903],
+            [40.677078, -73.973686],
+            [40.678064, -73.976179],
+            [40.678699, -73.975748]], {color: '#FD8D3C'}).bindPopup('<b>Census tract 161</b><br> Number of housing units in 2013: 1497 <br> Number of housing units in 2010: 1552').addTo(units);
+  const units6 = L.polygon([
+            [40.680586, -73.980893],
+            [40.681221, -73.980463],
+            [40.681854, -73.980034],
+            [40.682488, -73.9796049],
+            [40.683124, -73.979164],
+            [40.683759, -73.978742],
+            [40.684394, -73.9783369],
+            [40.684863, -73.978026],
+            [40.684052, -73.977457],
+            [40.683644, -73.9763179],
+            [40.683250, -73.976528],
+            [40.682871, -73.976501],
+            [40.682508, -73.976316],
+            [40.682119, -73.976596],
+            [40.681486, -73.977023],
+            [40.680852, -73.977454],
+            [40.680312, -73.977814],
+            [40.680216, -73.977885],
+            [40.679679, -73.978248],
+            [40.6795789, -73.978320],
+            [40.6790469, -73.978675],
+            [40.6792869, -73.979559],
+            [40.679952, -73.981324],
+            [40.680586, -73.980893]], {color:'#FC4E2A'}).bindPopup('<b>Census tract 179</b><br> Number of housing units in 2013: 1593 <br> Number of housing units in 2010: 1543').addTo(units);
+
+//add non-yt data JUST ADD 2010 DATA
+const nonyt = L.layerGroup();
+  const nonyt1 = L.polygon([
+            [40.686681, -73.979362],
+              [40.686712, -73.979056],
+                [40.686819, -73.978207],
+                [40.686918, -73.977361],
+            [40.686993, -73.976545],
+            [40.687024, -73.976205],
+            [40.687086, -73.975589],
+            [40.687190, -73.974615],
+            [40.686309, -73.974440],
+            [40.685513, -73.974280],
+            [40.683755, -73.973922],
+            [40.683060, -73.9737791],
+            [40.683278, -73.974826],
+            [40.683504, -73.975928],
+            [40.683644, -73.976317],
+            [40.684052, -73.977457],
+            [40.684863, -73.978026],
+            [40.685195, -73.978273],
+            [40.686284, -73.979087]], {color:'#BD0026'}).bindPopup('<b>Census tract 35</b><br>% of non-white residents, 2013: 87.8% <br> % of non-white residents, 2010: 89.6').addTo(nonyt);
+  const nonyt2 = L.polygon([
+            [40.679578, -73.978320],
+            [40.679679, -73.978248],
+            [40.680216, -73.977885],
+            [40.680312, -73.977814],
+            [40.680852, -73.977454],
+            [40.681486, -73.977023],
+            [40.682119, -73.976596],
+            [40.682508, -73.976316],
+            [40.682871, -73.976501],
+            [40.683250, -73.976528],
+            [40.683644, -73.976317],
+            [40.683504, -73.975928],
+            [40.683278, -73.974826],
+            [40.683060, -73.973779],
+            [40.682280, -73.973951],
+            [40.681505, -73.974226],
+            [40.680732, -73.974503],
+            [40.680265, -73.97469],
+            [40.679955, -73.974904],
+            [40.679876, -73.974958],
+            [40.679333, -73.975320],
+            [40.678699, -73.975748],
+            [40.678064, -73.976179],
+            [40.679046, -73.978675],
+            [40.679578, -73.978320]], {color:'#FD8D3C'}).bindPopup('<b>Census tract 129.02</b><br>% of non-white residents, 2013: 39.7% <br> % of non-white residents, 2010: 35.9%').addTo(nonyt);
+  const nonyt3 = L.polygon([
+            [40.677416, -73.983041],
+            [40.677746, -73.982816],
+            [40.678050, -73.982610],
+            [40.678685, -73.982181],
+            [40.679316, -73.981754],
+            [40.679952, -73.981324],
+            [40.679286, -73.979559],
+            [40.679046, -73.978675],
+            [40.678064, -73.976179],
+            [40.677430, -73.976615],
+            [40.676707, -73.977102],
+            [40.676072, -73.977530],
+            [40.675574, -73.977867],
+            [40.675438, -73.977959],
+            [40.6755, -73.978121],
+            [40.676288, -73.980139],
+            [40.676358, -73.980322],
+            [40.676412, -73.980459],
+            [40.676487, -73.980654],
+            [40.676532, -73.980772],
+            [40.677354, -73.98288],
+            [40.677416, -73.983041]], {color:'#FC4E2A'}).bindPopup('<b>Census tract 131</b><br>% of non-white residents, 2013: 43.5%<br> % of non-white residents, 2010: 38.1%').addTo(nonyt);
+  const nonyt4 = L.polygon([
+            [40.675574, -73.977867],
+            [40.676072, -73.977530],
+            [40.676707, -73.977102],
+            [40.677430, -73.976615],
+            [40.678064, -73.976179],
+            [40.677078, -73.973686],
+            [40.676412, -73.971903],
+            [40.675905, -73.969498],
+            [40.675359, -73.969692],
+            [40.675283, -73.969555],
+            [40.675184, -73.969413],
+            [40.675075, -73.969282],
+            [40.674963, -73.969173],
+            [40.674852, -73.969084],
+            [40.674712, -73.968998],
+            [40.674548, -73.968905],
+            [40.674385, -73.968834],
+            [40.674202, -73.9687773],
+            [40.674025, -73.968740],
+            [40.6739279, -73.968730],
+            [40.673283, -73.9687969],
+            [40.673069, -73.968857],
+            [40.672937, -73.968924],
+            [40.672742, -73.969246],
+            [40.672674, -73.969346],
+            [40.67265, -73.969662],
+            [40.67268, -73.970039],
+            [40.672616, -73.970409],
+            [40.672730, -73.9708589],
+            [40.672744, -73.971024],
+            [40.673318, -73.972515],
+            [40.673378, -73.972673],
+            [40.673487, -73.972954],
+            [40.673555, -73.973128],
+            [40.673636, -73.973337],
+            [40.674467, -73.975466],
+            [40.674576, -73.975749],
+            [40.675086, -73.9770559],
+            [40.675438, -73.977959],
+            [40.675574, -73.977867]], {color:'#FD8D3C'}).bindPopup('<b>Census tract 159</b> <br>% of non-white residents, 2013: 31.7%<br>% of non-white residents, 2010: 31.2%').addTo(nonyt);
+  const nonyt5 = L.polygon([
+            [40.678699, -73.975748],
+            [40.679333, -73.975320],
+            [40.679876, -73.9749580],
+            [40.679955, -73.974904],
+            [40.680265, -73.974691],
+            [40.680732, -73.974503],
+            [40.681505, -73.974226],
+            [40.682280, -73.973951],
+            [40.6830605, -73.973779],
+            [40.682862, -73.972773],
+            [40.682767, -73.972324],
+            [40.682645, -73.971741],
+            [40.682414, -73.970640],
+            [40.681619, -73.970851],
+            [40.68085, -73.971119],
+            [40.680082, -73.971394],
+            [40.679206, -73.971710],
+            [40.678328, -73.972026],
+            [40.677447, -73.972346],
+            [40.677161, -73.972444],
+            [40.676412, -73.971903],
+            [40.677078, -73.973686],
+            [40.678064, -73.976179],
+            [40.678699, -73.975748]], {color:'#FD8D3C'}).bindPopup('<b>Census tract 161</b><br>% of non-white residents, 2013: 39.7% <br>% of non-white residents, 2010: 41.9%').addTo(nonyt);
+  const nonyt6 = L.polygon([
+            [40.680586, -73.980893],
+            [40.681221, -73.980463],
+            [40.681854, -73.980034],
+            [40.682488, -73.9796049],
+            [40.683124, -73.979164],
+            [40.683759, -73.978742],
+            [40.684394, -73.9783369],
+            [40.684863, -73.978026],
+            [40.684052, -73.977457],
+            [40.683644, -73.9763179],
+            [40.683250, -73.976528],
+            [40.682871, -73.976501],
+            [40.682508, -73.976316],
+            [40.682119, -73.976596],
+            [40.681486, -73.977023],
+            [40.680852, -73.977454],
+            [40.680312, -73.977814],
+            [40.680216, -73.977885],
+            [40.679679, -73.978248],
+            [40.6795789, -73.978320],
+            [40.6790469, -73.978675],
+            [40.6792869, -73.979559],
+            [40.679952, -73.981324],
+            [40.680586, -73.980893]], {color:'#E31A1C'}).bindPopup('<b>Census tract 179</b><br>% of non-white residents, 2013: 76.2%<br> % of non-white residents, 2010: 84.0%').addTo(nonyt);
+
+//add yt resident data DONE
+const ytres = L.layerGroup();
+  const ytres1 = L.polygon([
+            [40.686681, -73.979362],
+              [40.686712, -73.979056],
+                [40.686819, -73.978207],
+                [40.686918, -73.977361],
+            [40.686993, -73.976545],
+            [40.687024, -73.976205],
+            [40.687086, -73.975589],
+            [40.687190, -73.974615],
+            [40.686309, -73.974440],
+            [40.685513, -73.974280],
+            [40.683755, -73.973922],
+            [40.683060, -73.9737791],
+            [40.683278, -73.974826],
+            [40.683504, -73.975928],
+            [40.683644, -73.976317],
+            [40.684052, -73.977457],
+            [40.684863, -73.978026],
+            [40.685195, -73.978273],
+            [40.686284, -73.979087]], {color:'#FEB24C'}).bindPopup('<b>Census tract 35</b><br>% of white residents, 2013: 12.2%<br>% of white residents, 2010: 10.4%').addTo(ytres);
+  const ytres2 = L.polygon([
+            [40.679578, -73.978320],
+            [40.679679, -73.978248],
+            [40.680216, -73.977885],
+            [40.680312, -73.977814],
+            [40.680852, -73.977454],
+            [40.681486, -73.977023],
+            [40.682119, -73.976596],
+            [40.682508, -73.976316],
+            [40.682871, -73.976501],
+            [40.683250, -73.976528],
+            [40.683644, -73.976317],
+            [40.683504, -73.975928],
+            [40.683278, -73.974826],
+            [40.683060, -73.973779],
+            [40.682280, -73.973951],
+            [40.681505, -73.974226],
+            [40.680732, -73.974503],
+            [40.680265, -73.97469],
+            [40.679955, -73.974904],
+            [40.679876, -73.974958],
+            [40.679333, -73.975320],
+            [40.678699, -73.975748],
+            [40.678064, -73.976179],
+            [40.679046, -73.978675],
+            [40.679578, -73.978320]], {color:'#E31A1C'}).bindPopup('<b>Census tract 129.02</b><br>% of white residents, 2013: 60.3%<br>% of white residents, 2010: 64.1%').addTo(ytres);
+  const ytres3 = L.polygon([
+            [40.677416, -73.983041],
+            [40.677746, -73.982816],
+            [40.678050, -73.982610],
+            [40.678685, -73.982181],
+            [40.679316, -73.981754],
+            [40.679952, -73.981324],
+            [40.679286, -73.979559],
+            [40.679046, -73.978675],
+            [40.678064, -73.976179],
+            [40.677430, -73.976615],
+            [40.676707, -73.977102],
+            [40.676072, -73.977530],
+            [40.675574, -73.977867],
+            [40.675438, -73.977959],
+            [40.6755, -73.978121],
+            [40.676288, -73.980139],
+            [40.676358, -73.980322],
+            [40.676412, -73.980459],
+            [40.676487, -73.980654],
+            [40.676532, -73.980772],
+            [40.677354, -73.98288],
+            [40.677416, -73.983041]], {color:'#FC4E2A'}).bindPopup('<b>Census tract 131</b><br>% of white residents, 2013: 56.5%<br>% of white residents, 2010: 61.9%').addTo(ytres);
+  const ytres4 = L.polygon([
+            [40.675574, -73.977867],
+            [40.676072, -73.977530],
+            [40.676707, -73.977102],
+            [40.677430, -73.976615],
+            [40.678064, -73.976179],
+            [40.677078, -73.973686],
+            [40.676412, -73.971903],
+            [40.675905, -73.969498],
+            [40.675359, -73.969692],
+            [40.675283, -73.969555],
+            [40.675184, -73.969413],
+            [40.675075, -73.969282],
+            [40.674963, -73.969173],
+            [40.674852, -73.969084],
+            [40.674712, -73.968998],
+            [40.674548, -73.968905],
+            [40.674385, -73.968834],
+            [40.674202, -73.9687773],
+            [40.674025, -73.968740],
+            [40.6739279, -73.968730],
+            [40.673283, -73.9687969],
+            [40.673069, -73.968857],
+            [40.672937, -73.968924],
+            [40.672742, -73.969246],
+            [40.672674, -73.969346],
+            [40.67265, -73.969662],
+            [40.67268, -73.970039],
+            [40.672616, -73.970409],
+            [40.672730, -73.9708589],
+            [40.672744, -73.971024],
+            [40.673318, -73.972515],
+            [40.673378, -73.972673],
+            [40.673487, -73.972954],
+            [40.673555, -73.973128],
+            [40.673636, -73.973337],
+            [40.674467, -73.975466],
+            [40.674576, -73.975749],
+            [40.675086, -73.9770559],
+            [40.675438, -73.977959],
+            [40.675574, -73.977867]], {color:'#E31A1C'}).bindPopup('<b>Census tract 159</b<br>% of white residents, 2013: 68.3%<br>% of white residents, 2010: 68.8%').addTo(ytres);
+  const ytres5 = L.polygon([
+            [40.678699, -73.975748],
+            [40.679333, -73.975320],
+            [40.679876, -73.9749580],
+            [40.679955, -73.974904],
+            [40.680265, -73.974691],
+            [40.680732, -73.974503],
+            [40.681505, -73.974226],
+            [40.682280, -73.973951],
+            [40.6830605, -73.973779],
+            [40.682862, -73.972773],
+            [40.682767, -73.972324],
+            [40.682645, -73.971741],
+            [40.682414, -73.970640],
+            [40.681619, -73.970851],
+            [40.68085, -73.971119],
+            [40.680082, -73.971394],
+            [40.679206, -73.971710],
+            [40.678328, -73.972026],
+            [40.677447, -73.972346],
+            [40.677161, -73.972444],
+            [40.676412, -73.971903],
+            [40.677078, -73.973686],
+            [40.678064, -73.976179],
+            [40.678699, -73.975748]], {color:'#E31A1C'}).bindPopup('<b>Census tract 161</b><br>% of white residents, 2013: 60.3%<br>% of white residents, 2010: 58.1%').addTo(ytres);
+  const ytres6 = L.polygon([
+            [40.680586, -73.980893],
+            [40.681221, -73.980463],
+            [40.681854, -73.980034],
+            [40.682488, -73.9796049],
+            [40.683124, -73.979164],
+            [40.683759, -73.978742],
+            [40.684394, -73.9783369],
+            [40.684863, -73.978026],
+            [40.684052, -73.977457],
+            [40.683644, -73.9763179],
+            [40.683250, -73.976528],
+            [40.682871, -73.976501],
+            [40.682508, -73.976316],
+            [40.682119, -73.976596],
+            [40.681486, -73.977023],
+            [40.680852, -73.977454],
+            [40.680312, -73.977814],
+            [40.680216, -73.977885],
+            [40.679679, -73.978248],
+            [40.6795789, -73.978320],
+            [40.6790469, -73.978675],
+            [40.6792869, -73.979559],
+            [40.679952, -73.981324],
+            [40.680586, -73.980893]], {color:'#FD8D3C'}).bindPopup('<b>Census tract 179</b><br>% of white residents, 2013: 23.8%<br>% of white residents, 2010: 16.0%').addTo(ytres);
+
+//add median rent data DONE
+const medrent = L.layerGroup();
+  const medrent1 = L.polygon([
+            [40.686681, -73.979362],
+              [40.686712, -73.979056],
+                [40.686819, -73.978207],
+                [40.686918, -73.977361],
+            [40.686993, -73.976545],
+            [40.687024, -73.976205],
+            [40.687086, -73.975589],
+            [40.687190, -73.974615],
+            [40.686309, -73.974440],
+            [40.685513, -73.974280],
+            [40.683755, -73.973922],
+            [40.683060, -73.9737791],
+            [40.683278, -73.974826],
+            [40.683504, -73.975928],
+            [40.683644, -73.976317],
+            [40.684052, -73.977457],
+            [40.684863, -73.978026],
+            [40.685195, -73.978273],
+            [40.686284, -73.979087]], {color:'#FEB24C'}).bindPopup('<b>Census tract 35</b><br>Median rent, 2013: $955<br>Median rent, 2010: $940').addTo(medrent);
+  const medrent2 = L.polygon([
+            [40.679578, -73.978320],
+            [40.679679, -73.978248],
+            [40.680216, -73.977885],
+            [40.680312, -73.977814],
+            [40.680852, -73.977454],
+            [40.681486, -73.977023],
+            [40.682119, -73.976596],
+            [40.682508, -73.976316],
+            [40.682871, -73.976501],
+            [40.683250, -73.976528],
+            [40.683644, -73.976317],
+            [40.683504, -73.975928],
+            [40.683278, -73.974826],
+            [40.683060, -73.973779],
+            [40.682280, -73.973951],
+            [40.681505, -73.974226],
+            [40.680732, -73.974503],
+            [40.680265, -73.97469],
+            [40.679955, -73.974904],
+            [40.679876, -73.974958],
+            [40.679333, -73.975320],
+            [40.678699, -73.975748],
+            [40.678064, -73.976179],
+            [40.679046, -73.978675],
+            [40.679578, -73.978320]], {color:'#800026'}).bindPopup('<b>Census tract 129.02</b><br>Median rent, 2013: $1,864<br>Median rent, 2010: $1,700').addTo(medrent);
+  const medrent3 = L.polygon([
+            [40.677416, -73.983041],
+            [40.677746, -73.982816],
+            [40.678050, -73.982610],
+            [40.678685, -73.982181],
+            [40.679316, -73.981754],
+            [40.679952, -73.981324],
+            [40.679286, -73.979559],
+            [40.679046, -73.978675],
+            [40.678064, -73.976179],
+            [40.677430, -73.976615],
+            [40.676707, -73.977102],
+            [40.676072, -73.977530],
+            [40.675574, -73.977867],
+            [40.675438, -73.977959],
+            [40.6755, -73.978121],
+            [40.676288, -73.980139],
+            [40.676358, -73.980322],
+            [40.676412, -73.980459],
+            [40.676487, -73.980654],
+            [40.676532, -73.980772],
+            [40.677354, -73.98288],
+            [40.677416, -73.983041]], {color:'#800026'}).bindPopup('<b>Census tract 131</b><br>Median rent, 2013: $1,869<br>Median rent, 2010: $1,710').addTo(medrent);
+  const medrent4 = L.polygon([
+            [40.675574, -73.977867],
+            [40.676072, -73.977530],
+            [40.676707, -73.977102],
+            [40.677430, -73.976615],
+            [40.678064, -73.976179],
+            [40.677078, -73.973686],
+            [40.676412, -73.971903],
+            [40.675905, -73.969498],
+            [40.675359, -73.969692],
+            [40.675283, -73.969555],
+            [40.675184, -73.969413],
+            [40.675075, -73.969282],
+            [40.674963, -73.969173],
+            [40.674852, -73.969084],
+            [40.674712, -73.968998],
+            [40.674548, -73.968905],
+            [40.674385, -73.968834],
+            [40.674202, -73.9687773],
+            [40.674025, -73.968740],
+            [40.6739279, -73.968730],
+            [40.673283, -73.9687969],
+            [40.673069, -73.968857],
+            [40.672937, -73.968924],
+            [40.672742, -73.969246],
+            [40.672674, -73.969346],
+            [40.67265, -73.969662],
+            [40.67268, -73.970039],
+            [40.672616, -73.970409],
+            [40.672730, -73.9708589],
+            [40.672744, -73.971024],
+            [40.673318, -73.972515],
+            [40.673378, -73.972673],
+            [40.673487, -73.972954],
+            [40.673555, -73.973128],
+            [40.673636, -73.973337],
+            [40.674467, -73.975466],
+            [40.674576, -73.975749],
+            [40.675086, -73.9770559],
+            [40.675438, -73.977959],
+            [40.675574, -73.977867]], {color:'#800026'}).bindPopup('<b>Census tract 159</b><br>Median rent, 2013: $1,912<br>Median rent, 2010: $1,746').addTo(medrent);
+  const medrent5 = L.polygon([
+            [40.678699, -73.975748],
+            [40.679333, -73.975320],
+            [40.679876, -73.9749580],
+            [40.679955, -73.974904],
+            [40.680265, -73.974691],
+            [40.680732, -73.974503],
+            [40.681505, -73.974226],
+            [40.682280, -73.973951],
+            [40.6830605, -73.973779],
+            [40.682862, -73.972773],
+            [40.682767, -73.972324],
+            [40.682645, -73.971741],
+            [40.682414, -73.970640],
+            [40.681619, -73.970851],
+            [40.68085, -73.971119],
+            [40.680082, -73.971394],
+            [40.679206, -73.971710],
+            [40.678328, -73.972026],
+            [40.677447, -73.972346],
+            [40.677161, -73.972444],
+            [40.676412, -73.971903],
+            [40.677078, -73.973686],
+            [40.678064, -73.976179],
+            [40.678699, -73.975748]], {color:'#800026'}).bindPopup('<b>Census tract 161</b><br>Median rent, 2013: $1,920<br>Median rent, 2010: $1,776').addTo(medrent);
+  const medrent6 = L.polygon([
+            [40.680586, -73.980893],
+            [40.681221, -73.980463],
+            [40.681854, -73.980034],
+            [40.682488, -73.9796049],
+            [40.683124, -73.979164],
+            [40.683759, -73.978742],
+            [40.684394, -73.9783369],
+            [40.684863, -73.978026],
+            [40.684052, -73.977457],
+            [40.683644, -73.9763179],
+            [40.683250, -73.976528],
+            [40.682871, -73.976501],
+            [40.682508, -73.976316],
+            [40.682119, -73.976596],
+            [40.681486, -73.977023],
+            [40.680852, -73.977454],
+            [40.680312, -73.977814],
+            [40.680216, -73.977885],
+            [40.679679, -73.978248],
+            [40.6795789, -73.978320],
+            [40.6790469, -73.978675],
+            [40.6792869, -73.979559],
+            [40.679952, -73.981324],
+            [40.680586, -73.980893]], {color:'#E31A1C'}).bindPopup('<b>Census tract 179</b><br>Median rent, 2013: $1,155<br>Median rent, 2010: $1,043').addTo(medrent);
+  
+  //background satellite map layer
+  const osm = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19,
+    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+  
+  });
+  
+  //background streetmap layer
+  const osmHOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
+  });
+  
+  const map = L.map('map', {
+    center: [40.68259867589981, -73.97528934757588],
+    zoom: 15,
+    layers: [osm, stadium, tracts]
+  });
+  
+  //add basemaps you want here units, nonyt, ytres, medrent
+  const baseLayers = {
+    'Satellite map': osm,
+    'Street map': osmHOT
+  };
+  
+  //add all the overlays you want on the menu here
+  const overlays = {
+    'Stadium': stadium,
+    'Census tracts' : tracts
+  };
+  
+  const layerControl = L.control.layers(baseLayers, overlays).addTo(map);
+  
+  //Adding all the extra layers. I'm (Frankie) putting the ones that I don't want to be turned on automatically here.
+  layerControl.addOverlay(units, 'Housing units');
+  layerControl.addOverlay(nonyt, '% of non-white residents');
+  layerControl.addOverlay(ytres, '% of white residents');
+  layerControl.addOverlay(medrent, 'Median rent (USD)');
+
+  
+  </script>
+
+</body>
+</html>
