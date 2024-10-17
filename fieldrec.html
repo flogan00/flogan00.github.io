@@ -80,6 +80,15 @@
 	const marker = L.marker([39.39355, -119.86426]).addTo(map)
 		.bindPopup('<b>Location:</b> Thomas Creek, Washoe County, Nevada<br/><b>Date:</b> 14 October 2024').openPopup()
 
+	function onMapClick(e) {
+		popup
+			.setLatLng(e.latlng)
+			.setContent(`You clicked the map at ${e.latlng.toString()}`)
+			.openOn(map);
+	}
+
+	map.on('click', onMapClick);
+
 
 </script>
 </body>
