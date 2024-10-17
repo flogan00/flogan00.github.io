@@ -67,7 +67,7 @@
 <div id="map" style="width: 800px; height: 600px;"></div>
 <script>
 
-	const map = L.map('map').setView([36.929, -109.604], 8);
+	const map = L.map('map').setView([36.929, -109.604], 13);
 
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
@@ -77,18 +77,8 @@
 	const marker = L.marker([40.53662286229229, -105.17720460718955]).addTo(map)
 		.bindPopup('<b>Location:</b> Horsetooth Mountain Open Space, Larimer County, Colorado<br/><b>Date:</b> 10 May 2023').openPopup()
 
-	const marker = L.marker([39.39355, -119.86426]).addTo(map)
+	const marker2 = L.marker([39.39355, -119.86426]).addTo(map)
 		.bindPopup('<b>Location:</b> Thomas Creek, Washoe County, Nevada<br/><b>Date:</b> 14 October 2024').openPopup()
-
-	function onMapClick(e) {
-		popup
-			.setLatLng(e.latlng)
-			.setContent(`You clicked the map at ${e.latlng.toString()}`)
-			.openOn(map);
-	}
-
-	map.on('click', onMapClick);
-
 
 </script>
 </body>
