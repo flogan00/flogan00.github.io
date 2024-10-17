@@ -11,6 +11,24 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="styles.css" rel="stylesheet" />
     </head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
     <body>
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
@@ -62,7 +80,7 @@
                     </p>
                     <br>
                     <p class="fs-5 mb-4"><b>7/12/2023 Update</b></p>
-                    <--! <img src="images/pictureofme.png" alt="insert alt text here"> -->
+                    <!-- <img src="images/pictureofme.png" alt="insert alt text here"> -->
                 </div>
                 <div class="row">
                     <div class="column">
