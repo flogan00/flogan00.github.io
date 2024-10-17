@@ -56,7 +56,7 @@
 <!-- Page content-->
 <!-- Explanation about what this is-->
 	<div class="container-fluid">
-        	<h1 class="mt-4">Field recordings (under heavy construction)</h1>
+        	<h1 class="mt-4">Field recordings- under heavy construction</h1>
                     <p>Hiking and spending time outdoors are some of my favorite hobbies, and one of the ways I like to commemorate my time outside is by taking audio recordings 
 		    of my natural surroundings when I'm out. I created the map below to keep track of all the places I've recorded. I'm slowly adding MP3 files to the map pop-ups, 
 		    so please bear with.
@@ -66,7 +66,7 @@
                 </div>
 <div id="map" style="width: 800px; height: 600px;"></div>
 <script>
-	const map = L.map('map').setView([37.453250602672966, -108.1155323932853], 8);
+	const map = L.map('map').setView([37.453, -108.115], 8);
 	const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -77,7 +77,8 @@
 
 	const marker2 = L.marker([39.39355, -119.86426]).addTo(map)
 		.bindPopup('<b>Location:</b> Thomas Creek, Washoe County, Nevada<br/><b>Date:</b> 14 October 2024').openPopup()
-	const marker3 = L.marker(32.255156029574586, -111.19750462338851]).addTo(map)
+	
+	const marker3 = L.marker(32.2551, -111.1975046]).addTo(map)
 		.bindPopup('<b>Location:</b> Wasson Peak, Pima County, Arizona<br/><b>Date:</b> 20 December 2024').openPopup()
 
 
