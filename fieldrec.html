@@ -59,7 +59,7 @@
         	<h1 class="mt-4">Field recordings</h1>
                     <p>Hiking and spending time outdoors are some of my favorite hobbies, and one of the ways I like to commemorate my time outside is by taking audio recordings 
 		    of my natural surroundings when I'm out. I created the map below to keep track of all the places I've recorded. I'm slowly adding MP3 files to the map pop-ups, 
-		    so please bear with.<p>
+		    so please bear with. Also, be sure to zoom in; I have several recordings across the map.<p>
 		    <p>
 		    I'm currently recording on a Zoom H5 digital recorder onto Lexar 1000x 32GB SD cards, with the Sony MDR7506 Professional headphones.
                     </p>
@@ -95,6 +95,9 @@
 
 	const marker8 = L.marker([32.392767756571594, -111.13864031926892]).addTo(map)
 		.bindPopup('<b>Location:</b> El Rio Preserve, Pima County, Arizona<br/><b>Date:</b> 17 December 2024</br><b>Recording:</b><audio controls controlsList="nodownload"><source src="fieldrecordings/wetlands_birds_water.WAV" type="audio/wav"><br><b>Notes:</b>').openPopup()
+
+	const marker9 = L.marker([39.38441739942668, -119.84104236409235]).addTo(map)
+		.bindPopup('<b>Location:</b> Whites Creek, Washoe County, Nevada<br/><b>Date:</b> 14 October 2024</br><b>Recording:</b><audio controls controlsList="nodownload"><source src="fieldrecordings/whitescreek.mp3" type="audio/mpeg"><br><b>Notes:</b>').openPopup()
 
 </script>
 </body>
